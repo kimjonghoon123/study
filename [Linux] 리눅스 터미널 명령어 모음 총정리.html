@@ -1,0 +1,2649 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://coding-factory.tistory.com/504 -->
+<html lang="ko" class="
+	jb-header-type-04
+	jb-navigation-type-03
+	jb-sidebar-right-type-03
+	jb-sidebar-bottom-type-01
+	
+	
+	
+	jb-recent-posts-thumbnail-show
+	jb-font-body-type-05
+	jb-font-heading-type-05
+	jb-cover-title-type-01
+	jb-index-notice-type-01
+	jb-index-related-type-01
+	jb-another-category-type-02
+	jb-comment-type-01
+	jb-typography-heading-type-01
+	jb-typography-blockquote-1-type-01
+	jb-typography-blockquote-2-type-01
+	jb-typography-ce-heading-type-01
+	jb-typography-ce-blockquote-type-01
+"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/lightbox.min.css"><link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/font.css"><link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/content.css"><!--[if lt IE 9]><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script><![endif]--><!--[if gte IE 9]>
+<!--><script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(6).txt"></script><script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(7).txt"></script><script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(8).txt" id="google_shimpl"></script><script type="text/javascript" async="" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/analytics.js.download"></script><script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/jquery-3.2.1.min.js.download"></script><!--<![endif]-->
+<script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/lightbox-plus-jquery.min.js.download"></script>
+<script>
+lightbox.options.fadeDuration = 200;
+lightbox.options.resizeDuration = 200;
+lightbox.options.wrapAround = false;
+lightbox.options.albumLabel = "%1 / %2";
+</script>
+<script>var tjQuery = jQuery.noConflict(true);</script><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><meta name="referrer" content="always"><link rel="icon" href="https://tistory2.daumcdn.net/tistory/2826541/53e5826f4ec34f5181a0ac8d2f72a7e0"><link rel="apple-touch-icon" href="https://img1.daumcdn.net/thumb/C180x180/?fname=https%3A%2F%2Ftistory2.daumcdn.net%2Ftistory%2F2826541%2Fattach%2Ff3c51d35915945aba94d36eda4c78264">
+<link rel="apple-touch-icon" sizes="76x76" href="https://img1.daumcdn.net/thumb/C76x76/?fname=https%3A%2F%2Ftistory2.daumcdn.net%2Ftistory%2F2826541%2Fattach%2Ff3c51d35915945aba94d36eda4c78264">
+<link rel="apple-touch-icon" sizes="120x120" href="https://img1.daumcdn.net/thumb/C120x120/?fname=https%3A%2F%2Ftistory2.daumcdn.net%2Ftistory%2F2826541%2Fattach%2Ff3c51d35915945aba94d36eda4c78264">
+<link rel="apple-touch-icon" sizes="152x152" href="https://img1.daumcdn.net/thumb/C152x152/?fname=https%3A%2F%2Ftistory2.daumcdn.net%2Ftistory%2F2826541%2Fattach%2Ff3c51d35915945aba94d36eda4c78264">
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338">
+<meta name="google-adsense-platform-domain" content="tistory.com">
+<meta name="description" content="리눅스 명령어 모음집 명령어 설명 alias 명령어 간소화 apropos 관련 명령어 검색하기 arch 컴퓨터 종류 확인하기 arp 같은 서브넷 IP 조회하기 at 작업시간 설정하기 atd 계획성 있는 작업 실행하기 awk 특정..">
+
+<!-- BEGIN OPENGRAPH -->
+<link rel="canonical" href="https://coding-factory.tistory.com/504"><meta property="og:type" content="article"><meta property="og:url" content="https://coding-factory.tistory.com/504"><meta property="og:article:author" content="코딩팩토리"><meta property="og:site_name" content="코딩팩토리"><meta property="og:title" content="[Linux] 리눅스 터미널 명령어 모음 총정리"><meta name="by" content="코딩팩토리"><meta property="og:description" content="리눅스 명령어 모음집 명령어 설명 alias 명령어 간소화 apropos 관련 명령어 검색하기 arch 컴퓨터 종류 확인하기 arp 같은 서브넷 IP 조회하기 at 작업시간 설정하기 atd 계획성 있는 작업 실행하기 awk 특정.."><meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRAO8a%2FbtqCF7in5jo%2FbmzxBt56Ke3HFzgfVQm8qk%2Fimg.png"><meta property="article:section" content="IT 인터넷">
+<!-- END OPENGRAPH -->
+
+
+
+<!-- BEGIN TWITTERCARD -->
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@TISTORY"><meta name="twitter:title" content="[Linux] 리눅스 터미널 명령어 모음 총정리"><meta name="twitter:description" content="리눅스 명령어 모음집 명령어 설명 alias 명령어 간소화 apropos 관련 명령어 검색하기 arch 컴퓨터 종류 확인하기 arp 같은 서브넷 IP 조회하기 at 작업시간 설정하기 atd 계획성 있는 작업 실행하기 awk 특정.."><meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRAO8a%2FbtqCF7in5jo%2FbmzxBt56Ke3HFzgfVQm8qk%2Fimg.png">
+<!-- END TWITTERCARD -->
+
+
+
+<!-- BEGIN DAUMAPP -->
+<meta property="dg:plink" content="https://coding-factory.tistory.com/504"><meta name="plink" content="https://coding-factory.tistory.com/504"><meta name="title" content="[Linux] 리눅스 터미널 명령어 모음 총정리"><meta name="article:media_name" content="코딩팩토리"><meta property="article:mobile_url" content="https://coding-factory.tistory.com/m/504"><meta property="article:pc_url" content="https://coding-factory.tistory.com/504"><meta property="article:mobile_view_url" content="https://coding-factory.tistory.com/m/504"><meta property="article:pc_view_url" content="https://coding-factory.tistory.com/504"><meta property="article:talk_channel_view_url" content="https://coding-factory.tistory.com/m/504"><meta property="article:pc_service_home" content="https://www.tistory.com"><meta property="article:mobile_service_home" content="https://www.tistory.com/m"><meta property="article:txid" content="2826541_504"><meta property="article:published_time" content="2020-03-16T21:26:34+09:00"><meta property="og:regDate" content="20200311113440"><meta property="article:modified_time" content="2020-05-28T09:54:45+09:00">
+<!-- END DAUMAPP -->
+
+
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https:\/\/coding-factory.tistory.com\/504"},"url":"https:\/\/coding-factory.tistory.com\/504","headline":"[Linux] \ub9ac\ub205\uc2a4 \ud130\ubbf8\ub110 \uba85\ub839\uc5b4 \ubaa8\uc74c \ucd1d\uc815\ub9ac","description":"\ub9ac\ub205\uc2a4 \uba85\ub839\uc5b4 \ubaa8\uc74c\uc9d1 \uba85\ub839\uc5b4 \uc124\uba85 alias \uba85\ub839\uc5b4 \uac04\uc18c\ud654 apropos \uad00\ub828 \uba85\ub839\uc5b4 \uac80\uc0c9\ud558\uae30 arch \ucef4\ud4e8\ud130 \uc885\ub958 \ud655\uc778\ud558\uae30 arp \uac19\uc740 \uc11c\ube0c\ub137 IP \uc870\ud68c\ud558\uae30 at \uc791\uc5c5\uc2dc\uac04 \uc124\uc815\ud558\uae30 atd \uacc4\ud68d\uc131 \uc788\ub294 \uc791\uc5c5 \uc2e4\ud589\ud558\uae30 awk \ud2b9\uc815..","author":{"@type":"Person","name":"\ucf54\ub529\ud329\ud1a0\ub9ac"},"image":{"@type":"ImageObject","url":"https:\/\/img1.daumcdn.net\/thumb\/R800x0\/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRAO8a%2FbtqCF7in5jo%2FbmzxBt56Ke3HFzgfVQm8qk%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20200316T21:26:34+09:00","dateModified":"20200528T09:54:45+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https:\/\/t1.daumcdn.net\/tistory_admin\/static\/images\/openGraph\/opengraph.png","width":"800px","height":"800px"}}}</script><meta name="robots" content="max-image-preview:large">
+<!-- END STRUCTURED_DATA -->
+
+
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>[Linux] 리눅스 터미널 명령어 모음 총정리</title>
+		<link rel="alternate" type="application/rss+xml" title="코딩팩토리" href="https://coding-factory.tistory.com/rss">
+		<link rel="stylesheet" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/xeicon.min.css">
+		<link rel="stylesheet" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/jquery.nivo.slider.css">
+		<link rel="stylesheet" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/jquery.nivo.slider.default.css">
+		<script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/jquery-3.5.1.min.js.download"></script>
+		<script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/jquery.nivo.slider.min.js.download"></script>
+		<script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/jquery.toc.js.download"></script>
+		<script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/jquery.smooth-scroll.js.download"></script>
+		<link rel="stylesheet" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/style.css">
+		
+	<!--코트 하이라이트-->
+<link href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/androidstudio.css" rel="stylesheet" type="text/css">
+<script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/highlight.min.js.download"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+		
+		<script>
+			// Variables
+				var jbCurrentUrl = window.location.pathname;
+				var jbThumbnailSize = '150x150';
+				var jbThumbnailSizeRelated = '150x150';
+				var jbThumbnailSizeNotice = '300x300';
+				var jbAdSenseInfeedCount = 0;
+			// Layout
+				var jbWidthContent = 770 + 30;
+				var jbWidthSidebar = 300 + 30;
+				var jbWidthContainer = jbWidthContent + jbWidthSidebar + 30;
+				var jbWidthContainerNoSidebar = jbWidthContent + 30;
+				
+					document.write( '<style> @media ( min-width: 1025px ) { .jb-container { width: ' + jbWidthContainer + 'px; } .jb-column-content { width: ' + jbWidthContent + 'px; } .jb-column-sidebar { width: ' + jbWidthSidebar + 'px; } } </style>' );
+				
+				
+			// Responsive
+				var jbResponsiveYouTube = '1'; // yes or no
+				var jbResponsiveTable = '1'; // yes or no
+			// AdSense
+				var jbAdSenseClientId = 'ca-pub-1613265522541448'; // data-ad-client
+				var jbAdSenseMainTopSlot = ''; // data-ad-slot
+				var jbAdSenseMainBottomSlot = ''; // data-ad-slot
+				var jbAdSenseContentTopSlot = ''; // data-ad-slot
+				var jbAdSenseContentTopLeftSlot = '9554139828'; // data-ad-slot
+				var jbAdSenseContentTopRightSlot = '6942442480'; // data-ad-slot
+				var jbAdSenseContentMiddleSlot = ''; // data-ad-slot
+				var jbAdSenseContentBottomSlot = ''; // data-ad-slot
+				var jbAdSenseInfeedLayoutKey = '-fd+8+3n-q8+12s';
+				var jbAdSenseInfeedSlot = '6191496308';
+				var jbAdSenseInfeedInterval = '3';
+				
+					var jbAdSenseDataFullWidthResponsive = 'true';
+				
+				
+				var jbAdSenseContentMiddleShow = ''; // yes or no
+		</script><style> @media ( min-width: 1025px ) { .jb-container { width: 1160px; } .jb-column-content { width: 800px; } .jb-column-sidebar { width: 330px; } } </style>
+		<style>
+			body { font-size: 16px; }
+			.jb-article { font-size: 16px; }
+			.jb-header-type-04 .jb-header-table { background-image: url( "https://tistory1.daumcdn.net/tistory/2826541/skinSetting/1773905095854d1fb2752fc5e485a3b5" ); }
+			.jb-header-type-11 .jb-background-header { background-image: url( "" ); }
+			
+		</style>
+	<meta name="naver-site-verification" content="3a20db29bd8db73d24f1e15c685fc1d866ff3ca1">
+<meta name="google-site-verification" content="8yHesjn-2lTvQL11ncopZaGvskuE5odBGBu3oRZKKTk">
+<meta name="msvalidate.01" content="5F2F2480650CE4DC1D22B99F8916735F"><script async="" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','UA-105844102-2');
+</script>
+<link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/style(1).css">
+<script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/profile.js.download"></script>
+	<style type="text/css">
+		.another_category { border: 1px solid #E5E5E5; padding: 10px 10px 5px; margin:10px 0; clear: both; }
+		.another_category h4 { font-size: 12px !important; margin: 0 !important; border-bottom: 1px solid #E5E5E5 !important; padding: 2px 0 6px !important; }
+		.another_category h4 a { font-weight: bold !important; }
+		.another_category table { table-layout: fixed; border-collapse: collapse; width: 100% !important; margin-top: 10px !important; }
+		* html .another_category table { width: auto !important; }
+		*:first-child+html .another_category table { width: auto !important; }
+		.another_category th, .another_category td { padding: 0 0 4px !important; }
+		.another_category th { text-align: left; font-size: 12px !important; font-weight: normal;  word-break: break-all; overflow: hidden; line-height: 1.5; }
+		.another_category td { text-align: right; width: 80px; font-size: 11px; }
+		.another_category th a { font-weight: normal; text-decoration: none; border: none !important; }
+		.another_category th a.current{ font-weight: bold; text-decoration: none !important; border-bottom: 1px solid !important; }
+		.another_category th span { font-weight: normal; text-decoration: none; font: 10px Tahoma, Sans-serif; border: none !important; }
+
+		.another_category_color_gray, .another_category_color_gray h4 { border-color: #E5E5E5 !important; }
+		.another_category_color_gray * { color: #909090 !important; }
+		.another_category_color_gray th a.current{border-color:#909090 !important;}
+		.another_category_color_gray h4, .another_category_color_gray h4 a { color: #737373 !important; }
+
+
+		.another_category_color_red, .another_category_color_red h4 { border-color: #F6D4D3 !important;  }
+		.another_category_color_red * { color: #E86869 !important; }
+		.another_category_color_red th a.current{border-color:#E86869 !important;}
+		.another_category_color_red h4, .another_category_color_red h4 a { color: #ED0908 !important; }
+
+
+		.another_category_color_green, .another_category_color_green h4 { border-color: #CCE7C8 !important; }
+		.another_category_color_green * { color: #64C05B !important; }
+		.another_category_color_green th a.current{border-color:#64C05B !important;}
+		.another_category_color_green h4, .another_category_color_green h4 a { color: #3EA731 !important; }
+
+
+		.another_category_color_blue, .another_category_color_blue h4 { border-color: #C8DAF2 !important; }
+		.another_category_color_blue * { color: #477FD6 !important; }
+		.another_category_color_blue th a.current{border-color:#477FD6 !important;}
+		.another_category_color_blue h4, .another_category_color_blue h4 a { color: #1960CA !important; }
+
+
+		.another_category_color_violet, .another_category_color_violet h4 { border-color: #E1CEEC !important;  }
+		.another_category_color_violet * { color:#9D64C5 !important; }
+		.another_category_color_violet th a.current{border-color:#9D64C5 !important;}
+		.another_category_color_violet h4, .another_category_color_violet h4 a { color: #7E2CB5 !important; }
+	</style>
+<script type="text/javascript">
+        
+        window.TistoryBlog = {
+            basePath: "",
+            url: "https://coding-factory.tistory.com",
+            tistoryUrl: "https://coding-factory.tistory.com",
+			manageUrl: 'https://coding-factory.tistory.com/manage',
+            token: 'p5aw1KV0/f67ZwCJGNtSIQ=='
+        };
+        var servicePath = "";
+        var blogURL = "";
+    </script>
+
+	<script> (function() { window.orgjQuery = window.jQuery; window.jQuery = tjQuery })()</script>
+    <script type="text/javascript" defer="" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/reaction-button-container.min.js.download"></script>
+    <script> (function() { window.jQuery = window.orgjQuery; delete window.orgjQuery })()</script>
+        <script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/base.js.download"></script>
+        <link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/dialog.css">
+            <link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/font(1).css">
+    <link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/postBtn.css">
+        <link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/tistory.css">
+        <script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/kakao.min.js.download"></script>
+
+        <link rel="stylesheet" type="text/css" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/revenue.css"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><link rel="preload" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(9).txt" as="script"><script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(9).txt"></script><link rel="preload" href="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(10).txt" as="script"><script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(10).txt"></script></head>
+	<body id="tt-body-page" aria-hidden="false" style="padding: 0px 0px 154px;"><script type="text/javascript">
+	(function() {
+		if (!window.T) {
+			window.T = {}
+		}
+		window.T.config = {"TOP_SSL_URL":"https:\/\/www.tistory.com","PREVIEW":false,"ROLE":"user","PREV_PAGE":"\/505","NEXT_PAGE":"\/503","BLOG":{"isDormancy":false,"title":"\ucf54\ub529\ud329\ud1a0\ub9ac"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https:\/\/www.tistory.com\/auth\/login\/?redirectUrl=http%3A%2F%2Fcoding-factory.tistory.com%2F504","DEFAULT_URL":"https:\/\/coding-factory.tistory.com","USER":{"name":"\ud770\uc0c9\ub0a8\uc790","homepage":"https:\/\/whiteman97.tistory.com"},"ROLE_GROUP":"visitor","SUBSCRIPTION":{"status":"none","isConnected":false,"isProcessing":false,"isPending":false,"isWait":false,"isNone":true},"IS_LOGIN":true,"HAS_BLOG":true,"TOP_URL":"https:\/\/www.tistory.com","JOIN_URL":"https:\/\/www.tistory.com\/member\/join"};
+		window.appInfo = {"domain":"tistory.com","topUrl":"https:\/\/www.tistory.com","loginUrl":"https:\/\/www.tistory.com\/auth\/login","logoutUrl":"https:\/\/www.tistory.com\/auth\/logout"};
+
+        window.initData = {};
+                    initData.user = {"id":"4930714","loginId":"aam42@naver.com","name":"\ud770\uc0c9\ub0a8\uc790"};
+        
+	})();
+</script>
+
+<script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/common.js.download"></script>
+<div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
+
+<script>
+	var jbAdSenseMainTop = '<div class="jb-adsense-main-top"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseMainTopSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+	var jbAdSenseMainBottom = '<div class="jb-adsense-main-bottom"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseMainBottomSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+	var jbAdSenseMainBottom = '<div class="jb-adsense-main-bottom"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseMainBottomSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+	var jbAdSenseContentTop = '<div class="jb-adsense-content-top"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseContentTopSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+	var jbAdSenseContentTopLeftRight = '<div class="jb-adsense-table"><div class="jb-adsense-table-row"><div class="jb-adsense-table-cell jb-adsense-table-cell-left"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseContentTopLeftSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div><div class="jb-adsense-table-cell jb-adsense-table-cell-right"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseContentTopRightSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div></div></div>';
+	var jbAdSenseContentTopRight = '<div class="jb-adsense-content-top-right"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseContentTopRightSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+	var jbAdSenseContentMiddle = '<div class="jb-adsense-content-middle"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseContentMiddleSlot + '" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+	var jbAdSenseContentBottom = '<div class="jb-adsense-content-bottom"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + jbAdSenseClientId + '" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block" data-ad-client="' + jbAdSenseClientId + '" data-ad-slot="' + jbAdSenseContentBottomSlot + '" data-ad-format="auto" data-full-width-responsive="' + jbAdSenseDataFullWidthResponsive + '"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+</script>
+
+<div id="jb-page" style="height: auto !important;">
+
+<div class="jb-background jb-background-header" style="visibility: visible;">
+	<div class="jb-container jb-container-header">
+		<div class="jb-row jb-row-line jb-row-line-header-top">
+			<div class="jb-column jb-column-line jb-column-line-header-top">
+				<div class="jb-line jb-line-header-top"></div>
+			</div>
+		</div>
+		<div class="jb-row jb-row-header">
+			<div class="jb-column jb-column-header">
+				<div class="jb-cell jb-cell-header">
+					<div class="jb-header-table">
+						<div class="jb-header-table-row">
+							<div class="jb-header-table-cell jb-header-table-cell-site-title">
+								<div class="jb-header-mobile-table">
+									<div class="jb-header-mobile-table-row">
+										<div class="jb-header-mobile-table-cell jb-header-mobile-table-cell-site-title">
+											<header>
+												
+													<h1 class="jb-site-title"><a href="https://coding-factory.tistory.com/"><span class="jb-site-title-text">코딩팩토리</span></a></h1>
+												
+												
+											</header>
+										</div>
+										<div class="jb-header-mobile-table-cell jb-header-mobile-table-cell-bars">
+											<div class="jb-bars"><i class="xi-bars"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jb-header-table-cell jb-header-table-cell-search">
+								<div class="jb-header-blog-menu">
+									<nav>
+										<h2 class="jb-section-title jb-section-title-navigation">Header Menu</h2>
+										<ul>		<li class="t_menu_home first">
+			<a href="https://coding-factory.tistory.com/">홈</a>
+		</li>
+				<li class="t_menu_page">
+			<a href="https://coding-factory.tistory.com/pages/profile">블로그 소개</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/">전체보기</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/Language">Language</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/Web">Web</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/Mobile">Mobile</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/DB">DB</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/OS">OS</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/ETC.">ETC.</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81">일상</a>
+		</li>
+				<li class="t_menu_link_1">
+			<a href="https://brunch.co.kr/@e8362cab2f0c484#articles" target="_blank">생각정리</a>
+		</li>
+				<li class="t_menu_guestbook last">
+			<a href="https://coding-factory.tistory.com/guestbook">방명록</a>
+		</li>
+		</ul>
+									</nav>
+								</div>
+								<div class="jb-form-search jb-form-search-header">
+									
+										<div class="jb-form-search-table">
+											<div class="jb-form-search-table-row">
+												<div class="jb-form-search-table-cell jb-form-search-table-cell-input">
+													<input type="text" name="search" value="" onkeypress="if (event.keyCode == 13) { try{window.location.href=&#39;/search/&#39;+looseURIEncode(document.getElementsByName(&#39;search&#39;)[0].value);document.getElementsByName(&#39;search&#39;)[0].value=&#39;&#39;;return false;}catch(e){} }" placeholder="Search..." class="jb-form-input-text">
+												</div>
+												<div class="jb-form-search-table-cell jb-form-search-table-cell-button">
+													<button type="button" onclick="try{window.location.href=&#39;/search/&#39;+looseURIEncode(document.getElementsByName(&#39;search&#39;)[0].value);document.getElementsByName(&#39;search&#39;)[0].value=&#39;&#39;;return false;}catch(e){}" class="jb-form-button"><i class="xi-search"></i></button>
+												</div>
+											</div>
+										</div>
+									
+								</div>
+								
+									<div class="jb-sns-wrap">
+										
+											<div class="jb-sns jb-sns-facebook"><a href="https://www.facebook.com/wjdxo2633/" target="_blank"><i class="xi-facebook"></i></a></div>
+										
+										
+										
+										
+										
+										
+										
+									</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jb-row jb-row-line jb-row-line-header-bottom">
+			<div class="jb-column jb-column-line jb-column-line-header-bottom">
+				<div class="jb-line jb-line-header-bottom"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="jb-background jb-background-navigation" style="visibility: visible;">
+	<div class="jb-container jb-container-navigation">
+		<div class="jb-row jb-row-line jb-row-line-navigation-top">
+			<div class="jb-column jb-column-line jb-column-line-navigation-top">
+				<div class="jb-line jb-line-navigation-top"></div>
+			</div>
+		</div>
+		<div class="jb-row jb-row-navigation">
+			<div class="jb-column jb-column-navigation">
+				<div class="jb-cell jb-cell-navigation">
+					<nav>
+						<h2 class="jb-section-title jb-section-title-navigation">Main Menu</h2>
+						<div class="jb-navigation jb-navigation-category">
+							<ul class="tt_category">
+	<li class="">
+		<a class="link_tit" href="https://coding-factory.tistory.com/category">
+			분류 전체보기							<span class="c_cnt">(743)</span>
+			
+							<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+					</a>
+
+				<ul class="category_list">
+							<li class="">
+					<a class="link_item" href="https://coding-factory.tistory.com/category/Language">
+						Language													<span class="c_cnt">(177)</span>
+						
+													<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Language/C%20%20%2C%20%20%20C%2B%2B%20%20%2C%20%20C%23">
+									C  ,   C++  ,  C#
+																			<span class="c_cnt">(87)</span>
+									
+																			<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Language/Java">
+									Java
+																			<span class="c_cnt">(85)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Language/Assembly">
+									Assembly
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="https://coding-factory.tistory.com/category/Web">
+						Web													<span class="c_cnt">(97)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Web%20programming">
+									Web programming
+																			<span class="c_cnt">(20)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Html">
+									Html
+																			<span class="c_cnt">(18)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/JavaScript">
+									JavaScript
+																			<span class="c_cnt">(15)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Ajax">
+									Ajax
+																			<span class="c_cnt">(4)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Jsp">
+									Jsp
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="https://coding-factory.tistory.com/category/Mobile">
+						Mobile													<span class="c_cnt">(44)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Mobile/Android">
+									Android
+																			<span class="c_cnt">(26)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="https://coding-factory.tistory.com/category/DB">
+						DB													<span class="c_cnt">(127)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/DB/Database%20Knowledge">
+									Database Knowledge
+																			<span class="c_cnt">(23)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/DB/Oracle">
+									Oracle
+																			<span class="c_cnt">(74)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/DB/MSSQL">
+									MSSQL
+																			<span class="c_cnt">(29)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="https://coding-factory.tistory.com/category/OS">
+						OS													<span class="c_cnt">(104)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/OS/Linux">
+									Linux
+																			<span class="c_cnt">(38)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/OS/Windows">
+									Windows
+																			<span class="c_cnt">(52)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="https://coding-factory.tistory.com/category/ETC.">
+						ETC.													<span class="c_cnt">(106)</span>
+						
+													<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Spring">
+									Spring
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Unity">
+									Unity
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Algorithm">
+									Algorithm
+																			<span class="c_cnt">(38)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Design%20Pattern">
+									Design Pattern
+																			<span class="c_cnt">(6)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./IDE">
+									IDE
+																			<span class="c_cnt">(22)</span>
+									
+																			<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Git">
+									Git
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./DevTools">
+									DevTools
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./HardWare">
+									HardWare
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81">
+						일상													<span class="c_cnt">(88)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81/%EC%9E%90%EC%9C%A0%EC%97%AC%ED%96%89">
+									자유여행
+																			<span class="c_cnt">(8)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8">
+									블로그
+																			<span class="c_cnt">(28)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81/%EC%A0%9C%ED%92%88%EB%A6%AC%EB%B7%B0">
+									제품리뷰
+																			<span class="c_cnt">(28)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+					</ul>
+			</li>
+</ul>
+						</div>
+						<div class="jb-navigation jb-navigation-blog-menu">
+							<ul>		<li class="t_menu_home first">
+			<a href="https://coding-factory.tistory.com/">홈</a>
+		</li>
+				<li class="t_menu_page">
+			<a href="https://coding-factory.tistory.com/pages/profile">블로그 소개</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/">전체보기</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/Language">Language</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/Web">Web</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/Mobile">Mobile</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/DB">DB</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/OS">OS</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/ETC.">ETC.</a>
+		</li>
+				<li class="t_menu_category">
+			<a href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81">일상</a>
+		</li>
+				<li class="t_menu_link_1">
+			<a href="https://brunch.co.kr/@e8362cab2f0c484#articles" target="_blank">생각정리</a>
+		</li>
+				<li class="t_menu_guestbook last">
+			<a href="https://coding-factory.tistory.com/guestbook">방명록</a>
+		</li>
+		</ul>
+						</div>
+						<div class="jb-form-search-navigation-table">
+							<div class="jb-form-search-navigation-table-row">
+								<div class="jb-form-search-navigation-table-cell jb-form-search-navigation-table-cell-input">
+									<input type="text" name="jb-search-navigation" value="" onkeypress="if (event.keyCode == 13) { try{window.location.href=&#39;/search/&#39;+looseURIEncode(document.getElementsByName(&#39;jb-search-navigation&#39;)[0].value);document.getElementsByName(&#39;jb-search-navigation&#39;)[0].value=&#39;&#39;;return false;}catch(e){} }" placeholder="Search..." class="jb-form-input-text">
+								</div>
+								<div class="jb-form-search-navigation-table-cell jb-form-search-navigation-table-cell-button">
+									<button type="button" onclick="try{window.location.href=&#39;/search/&#39;+looseURIEncode(document.getElementsByName(&#39;jb-search-navigation&#39;)[0].value);document.getElementsByName(&#39;jb-search-navigation&#39;)[0].value=&#39;&#39;;return false;}catch(e){}" class="jb-form-button"><i class="xi-search"></i></button>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="jb-row jb-row-line jb-row-line-navigation-bottom">
+			<div class="jb-column jb-column-line jb-column-line-navigation-bottom">
+				<div class="jb-line jb-line-navigation-bottom"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="jb-background jb-background-main-top" style="visibility: visible;">
+	<div class="jb-container jb-container-main-top">
+		<div class="jb-row jb-row-main-top">
+			<div class="jb-column jb-column-main-top">
+				<div class="jb-cell jb-cell-main-top">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="jb-background jb-background-main" style="visibility: visible; height: auto !important;">
+	<div class="jb-container jb-container-main" style="height: auto !important;">
+		<div class="jb-row jb-row-line jb-row-line-main-top">
+			<div class="jb-column jb-column-line jb-column-line-main-top">
+				<div class="jb-line jb-line-main-top"></div>
+			</div>
+		</div>
+		<div class="jb-row jb-row-main" style="height: auto !important;">
+			<div class="jb-column jb-column-content" style="height: auto !important;">
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						<div class="jb-cell jb-cell-content jb-cell-content-article" style="height: auto !important;">
+							<article style="height: auto !important;">
+								<header>
+									<div class="jb-content-title jb-content-title-article">
+										<h2><a href="https://coding-factory.tistory.com/504">[Linux] 리눅스 터미널 명령어 모음 총정리</a></h2>
+										<div class="jb-article-information">
+											<ul>
+												
+												<li class="jb-article-information-category"><span><a href="https://coding-factory.tistory.com/category/OS/Linux" class="jb-category-name">OS / Linux</a></span></li>
+												<li class="jb-article-information-date"><span>
+													
+													2020. 3. 16.
+												</span></li>
+												
+											</ul>
+										</div>
+									</div>
+								</header>
+								<!-- 본문 상단 -->
+								
+									<script>
+										document.write( jbAdSenseContentTopLeftRight );
+									</script><div class="jb-adsense-table" style="height: auto !important;"><div class="jb-adsense-table-row" style="height: auto !important;"><div class="jb-adsense-table-cell jb-adsense-table-cell-left" style="height: auto !important;"><script async="" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(11).txt" crossorigin="anonymous" data-checked-head="true"></script><ins class="adsbygoogle" data-ad-client="ca-pub-1613265522541448" data-ad-slot="9554139828" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" style="height: 280px;" data-ad-status="filled"><ins id="aswift_1_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_1_anchor" style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:336px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/ads.html" data-google-container-id="a!2" data-google-query-id="CN283KeN6_UCFQqYvAodWYgEpQ" data-load-complete="true"></iframe></ins></ins></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="jb-adsense-table-cell jb-adsense-table-cell-right" style="height: auto !important;"><script async="" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f(11).txt" crossorigin="anonymous" data-checked-head="true"></script><ins class="adsbygoogle" data-ad-client="ca-pub-1613265522541448" data-ad-slot="6942442480" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" style="height: 280px;" data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_2_anchor" style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block; overflow: visible;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:336px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/ads(1).html" data-google-container-id="a!3" data-google-query-id="CK_y3KeN6_UCFZBDvAod9QoKlw" data-load-complete="true"></iframe></ins></ins></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div>
+								
+								
+								
+								<section>
+									<div class="jb-content jb-content-article">
+										
+										<div class="jb-article"><div class="tt_article_useless_p_margin contents_style"><p></p><figure class="imageblock alignLeft" data-filename="images.png" data-origin-width="225" data-origin-height="225"><span data-url="https://blog.kakaocdn.net/dn/RAO8a/btqCF7in5jo/bmzxBt56Ke3HFzgfVQm8qk/img.png" data-lightbox="lightbox" data-alt=""><img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRAO8a%2FbtqCF7in5jo%2FbmzxBt56Ke3HFzgfVQm8qk%2Fimg.png" data-filename="images.png" data-origin-width="225" data-origin-height="225"></span></figure><p></p>
+<h2 data-ke-size="size26">리눅스 명령어 모음집</h2>
+<div class="jb-responsive-table"><table style="border-collapse: collapse; width: 100%; height: 4856px;" border="1" data-ke-style="style12">
+<tbody>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; text-align: center; height: 20px;"><b>명령어</b></td>
+<td style="width: 68.7209%; text-align: center; height: 20px;"><b>설명</b></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">alias</td>
+<td style="width: 68.7209%; height: 20px;">명령어 간소화</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">apropos</td>
+<td style="width: 68.7209%; height: 20px;">관련 명령어 검색<span style="color: #333333;">하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">arch</td>
+<td style="width: 68.7209%; height: 20px;">컴퓨터 종류 확인<span style="color: #333333;">하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">arp</td>
+<td style="width: 68.7209%; height: 20px;">같은 서브넷 IP 조회<span style="color: #333333;">하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">at</td>
+<td style="width: 68.7209%; height: 20px;">작업시간 설정<span style="color: #333333;">하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">atd</td>
+<td style="width: 68.7209%; height: 20px;">계획성 있는 작업 실행<span style="color: #333333;">하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">awk</td>
+<td style="width: 68.7209%; height: 20px;">특정 패턴 문자열 처리하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">a2p</td>
+<td style="width: 68.7209%; height: 20px;">펄 파일로 바꾸기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">badblocks</td>
+<td style="width: 68.7209%; height: 20px;">배드 블록 검사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">bc</td>
+<td style="width: 68.7209%; height: 20px;">계산기 실행하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">biff</td>
+<td style="width: 68.7209%; height: 20px;">메일 수신 소리로 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">bg</td>
+<td style="width: 68.7209%; height: 20px;">배경화면 설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">bind</td>
+<td style="width: 68.7209%; height: 20px;">키나 함수 순서 바인딩하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">break</td>
+<td style="width: 68.7209%; height: 20px;">루프 빠져나가기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cal</td>
+<td style="width: 68.7209%; height: 20px;">달력 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">bubuiltin</td>
+<td style="width: 68.7209%; height: 20px;">내부 명령어 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">case</td>
+<td style="width: 68.7209%; height: 20px;">조건절 처리하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cat</td>
+<td style="width: 68.7209%; height: 20px;">화면상에서 파일 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cd</td>
+<td style="width: 68.7209%; height: 20px;">디렉토리 이동하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cfdisk</td>
+<td style="width: 68.7209%; height: 20px;">디스크 설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">chattr</td>
+<td style="width: 68.7209%; height: 20px;">파일 속성 변경하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">chfn</td>
+<td style="width: 68.7209%; height: 20px;">사용자 정보 변경하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">chgrp</td>
+<td style="width: 68.7209%; height: 20px;">파일, 디렉토리가 속한 그룹 변경하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">chmod</td>
+<td style="width: 68.7209%; height: 20px;">파일 권한 변경하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">chown</td>
+<td style="width: 68.7209%; height: 20px;">파일 소유자 변경하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">chsh</td>
+<td style="width: 68.7209%; height: 20px;">지정된 셸 변경하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cksum</td>
+<td style="width: 68.7209%; height: 20px;">CRC값 점검하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">clear</td>
+<td style="width: 68.7209%; height: 20px;">터미널 화면 초기화하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">clock</td>
+<td style="width: 68.7209%; height: 20px;">CMOS 시간 조정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cmp</td>
+<td style="width: 68.7209%; height: 20px;">파일 비교하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">colcrt</td>
+<td style="width: 68.7209%; height: 20px;">문자 변환 필터</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">colrm</td>
+<td style="width: 68.7209%; height: 20px;">열&nbsp;삭제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">column</td>
+<td style="width: 68.7209%; height: 20px;">가로&nbsp;정렬하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">comm</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;비교&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">command</td>
+<td style="width: 68.7209%; height: 20px;">명령어 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">continue</td>
+<td style="width: 68.7209%; height: 20px;">루프 계속하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cp</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;복사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cpio</td>
+<td style="width: 68.7209%; height: 20px;">복사본&nbsp;만들기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">crontab</td>
+<td style="width: 68.7209%; height: 20px;">cron을 관리하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">csplit</td>
+<td style="width: 68.7209%; height: 20px;">파일에&nbsp;서식,&nbsp;규칙&nbsp;정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">cut</td>
+<td style="width: 68.7209%; height: 20px;">필요한&nbsp;필드만&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">date</td>
+<td style="width: 68.7209%; height: 20px;">날짜 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">dd</td>
+<td style="width: 68.7209%; height: 20px;">블럭장치&nbsp;읽고&nbsp;쓰기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">debugfs</td>
+<td style="width: 68.7209%; height: 20px;">ext2&nbsp;파일&nbsp;시스템&nbsp;디버깅하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">declare</td>
+<td style="width: 68.7209%; height: 20px;">변수&nbsp;선언하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">df</td>
+<td style="width: 68.7209%; height: 20px;">파일 시스템의 사용량 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">dirs</td>
+<td style="width: 68.7209%; height: 20px;">디렉토리 목록&nbsp;표시하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">dmesg</td>
+<td style="width: 68.7209%; height: 20px;">부팅 메시지 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">dnsdomainname</td>
+<td style="width: 68.7209%; height: 20px;">DNS&nbsp;이름&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">domainname</td>
+<td style="width: 68.7209%; height: 20px;">NIS 이름 출력 및 설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">du</td>
+<td style="width: 68.7209%; height: 20px;">디렉토리와 파일의 용량 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">dumpe2fs</td>
+<td style="width: 68.7209%; height: 20px;">파일 시스템 정보 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">echo</td>
+<td style="width: 68.7209%; height: 20px;">표준&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">eject</td>
+<td style="width: 68.7209%; height: 20px;">장치&nbsp;해제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">elm</td>
+<td style="width: 68.7209%; height: 20px;">메일&nbsp;관련</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">enable</td>
+<td style="width: 68.7209%; height: 20px;">내부&nbsp;명령어&nbsp;지정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">env</td>
+<td style="width: 68.7209%; height: 20px;">환경변수&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">eval</td>
+<td style="width: 68.7209%; height: 20px;">인수&nbsp;읽기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">exec</td>
+<td style="width: 68.7209%; height: 20px;">셸&nbsp;명령어&nbsp;실행하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">exit</td>
+<td style="width: 68.7209%; height: 20px;">종료하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">expand</td>
+<td style="width: 68.7209%; height: 20px;">탭을&nbsp;공백으로&nbsp;변환하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">export</td>
+<td style="width: 68.7209%; height: 20px;">변수&nbsp;지정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">e2fsck</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;시스템&nbsp;복구하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fc</td>
+<td style="width: 68.7209%; height: 20px;">지정된&nbsp;편집기&nbsp;받기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fdformat</td>
+<td style="width: 68.7209%; height: 20px;">플로피&nbsp;디스크&nbsp;포맷하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fdisk</td>
+<td style="width: 68.7209%; height: 20px;">파티션&nbsp;나누기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fg</td>
+<td style="width: 68.7209%; height: 20px;">지정된&nbsp;작업을&nbsp;전면&nbsp;프로세스로&nbsp;시작하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">file</td>
+<td style="width: 68.7209%; height: 20px;">파일 종류 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">find</td>
+<td style="width: 68.7209%; height: 20px;">파일 검색하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">finger</td>
+<td style="width: 68.7209%; height: 20px;">사용자 정보 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fold</td>
+<td style="width: 68.7209%; height: 20px;">정형화하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fmt</td>
+<td style="width: 68.7209%; height: 20px;">정형화하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">for</td>
+<td style="width: 68.7209%; height: 20px;">반복문 실행하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">free</td>
+<td style="width: 68.7209%; height: 20px;">메모리 사용량 체크하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fsck</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;시스템&nbsp;검사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fstab</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;시스템에&nbsp;대한&nbsp;고정적인&nbsp;정보&nbsp;저장하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ftp</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;전송&nbsp;프로그램</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">fuser</td>
+<td style="width: 68.7209%; height: 20px;">프로세스&nbsp;ID&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">getkeycodes</td>
+<td style="width: 68.7209%; height: 20px;">매핑&nbsp;테이블&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">grep</td>
+<td style="width: 68.7209%; height: 20px;">특정 문자 검색하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">gzexe</td>
+<td style="width: 68.7209%; height: 20px;">실행&nbsp;파일&nbsp;압축하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">gzip</td>
+<td style="width: 68.7209%; height: 20px;">압축하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">halt</td>
+<td style="width: 68.7209%; height: 20px;">시스템&nbsp;종료하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">hash</td>
+<td style="width: 68.7209%; height: 20px;">기억해 두기, index 역할</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">head</td>
+<td style="width: 68.7209%; height: 20px;">파일의&nbsp;앞부분&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">help</td>
+<td style="width: 68.7209%; height: 20px;">도움말&nbsp;보여주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">host</td>
+<td style="width: 68.7209%; height: 20px;">호스트 정보 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">history</td>
+<td style="width: 68.7209%; height: 20px;">사용 명령어 목록 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">hostname</td>
+<td style="width: 68.7209%; height: 20px;">서버 이름 조회하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">id</td>
+<td style="width: 68.7209%; height: 20px;">계정 정보 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">if</td>
+<td style="width: 68.7209%; height: 20px;">조건문&nbsp;실행하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ifconfig</td>
+<td style="width: 68.7209%; height: 20px;">랜카드에&nbsp;주소&nbsp;할당하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">imolamod</td>
+<td style="width: 68.7209%; height: 20px;">모듈&nbsp;설치하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">inetd</td>
+<td style="width: 68.7209%; height: 20px;">인터넷&nbsp;서비스의&nbsp;최상위&nbsp;데몬</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">init</td>
+<td style="width: 68.7209%; height: 20px;">실행&nbsp;단계 지정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ispell</td>
+<td style="width: 68.7209%; height: 20px;">철자법&nbsp;검사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">jobs</td>
+<td style="width: 68.7209%; height: 20px;">수행중인 프로세스 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">kbd_mode</td>
+<td style="width: 68.7209%; height: 20px;">키보드&nbsp;모드&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">kill</td>
+<td style="width: 68.7209%; height: 20px;">프로세스&nbsp;강제종료</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">klogd</td>
+<td style="width: 68.7209%; height: 20px;">강제종료 커널&nbsp;로그&nbsp;데몬</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ldd</td>
+<td style="width: 68.7209%; height: 20px;">공유 라이브러리의 의존성 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">less</td>
+<td style="width: 68.7209%; height: 20px;">페이지&nbsp;단위로&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">let</td>
+<td style="width: 68.7209%; height: 20px;">정규식&nbsp;표현하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lilo</td>
+<td style="width: 68.7209%; height: 20px;">부팅하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ln</td>
+<td style="width: 68.7209%; height: 20px;">링크하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">locate</td>
+<td style="width: 68.7209%; height: 20px;">패턴에&nbsp;맞는&nbsp;파일&nbsp;찾기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">login</td>
+<td style="width: 68.7209%; height: 20px;">로그인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">logger</td>
+<td style="width: 68.7209%; height: 20px;">시스템&nbsp;로그&nbsp;기록하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">logname</td>
+<td style="width: 68.7209%; height: 20px;">사용자&nbsp;로그인명&nbsp;보여주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">logout</td>
+<td style="width: 68.7209%; height: 20px;">로그인&nbsp;셸&nbsp;종료하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">look</td>
+<td style="width: 68.7209%; height: 20px;">특정&nbsp;단어&nbsp;검색하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">losetup</td>
+<td style="width: 68.7209%; height: 20px;">중복&nbsp;장치&nbsp;확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lpd</td>
+<td style="width: 68.7209%; height: 20px;">프린트&nbsp;데몬</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lpq</td>
+<td style="width: 68.7209%; height: 20px;">현재&nbsp;프린트&nbsp;작업&nbsp;상태&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lpr</td>
+<td style="width: 68.7209%; height: 20px;">출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lprm</td>
+<td style="width: 68.7209%; height: 20px;">대기열에&nbsp;있는&nbsp;문서&nbsp;삭제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ls</td>
+<td style="width: 68.7209%; height: 20px;">디렉토리 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lsattr</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;시스템의&nbsp;속성&nbsp;보여주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lsdev</td>
+<td style="width: 68.7209%; height: 20px;">하드웨어&nbsp;장치&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lsmod</td>
+<td style="width: 68.7209%; height: 20px;">모듈&nbsp;정보&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">lnsmod</td>
+<td style="width: 68.7209%; height: 20px;">모듈 올리기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rmmod&nbsp;</td>
+<td style="width: 68.7209%; height: 20px;">모듈&nbsp;내리기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mail</td>
+<td style="width: 68.7209%; height: 20px;">메일&nbsp;관련</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">make</td>
+<td style="width: 68.7209%; height: 20px;">컴파일하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">man</td>
+<td style="width: 68.7209%; height: 20px;">매뉴얼&nbsp;보기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mattrib</td>
+<td style="width: 68.7209%; height: 20px;"><span><span style="color: #333333;">MS-DOS</span>&nbsp;파일 속성변경하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mbadblocks</td>
+<td style="width: 68.7209%; height: 20px;">하드디스크 배드블럭 검사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mcd</td>
+<td style="width: 68.7209%; height: 20px;"><span>MS-DOS 디렉토리 변경하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mcopy</td>
+<td style="width: 68.7209%; height: 20px;">리눅스 도스간 파일 복사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mdel</td>
+<td style="width: 68.7209%; height: 20px;">리눅스에서 서버 모델 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mdeltree</td>
+<td style="width: 68.7209%; height: 20px;"><span style="color: #333333;">MS-DOS 파일 삭제하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mdirmesg</td>
+<td style="width: 68.7209%; height: 20px;">메시지를&nbsp;받을&nbsp;수&nbsp;있는지&nbsp;확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mformat</td>
+<td style="width: 68.7209%; height: 20px;"><span style="color: #000000;">MS-DOS 파일 시스템의 디스크 포맷하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mkdir&nbsp;</td>
+<td style="width: 68.7209%; height: 20px;">디렉토리&nbsp;만들기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mke2fs</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;시스템&nbsp;생성하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mkfs</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;시스템&nbsp;만들기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mknod</td>
+<td style="width: 68.7209%; height: 20px;">특수&nbsp;파일&nbsp;만들기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mkswap</td>
+<td style="width: 68.7209%; height: 20px;">스왑&nbsp;영역&nbsp;지정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mlabel</td>
+<td style="width: 68.7209%; height: 20px;">파일 시스템 라벨 변경</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mmd</td>
+<td style="width: 68.7209%; height: 20px;"><span>MS-DOS 파일 시스템의 디렉토리를 작성하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mount</td>
+<td style="width: 68.7209%; height: 20px;"><span>장치를 특정 파일/폴더에 할당하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">more</td>
+<td style="width: 68.7209%; height: 20px;">화면&nbsp;단위로&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mrd</td>
+<td style="width: 68.7209%; height: 20px;"><span>MS-DOS 파일 시스템 디렉토리를 삭제하기</span></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mutt</td>
+<td style="width: 68.7209%; height: 20px;">메일&nbsp;관련</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">mv</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;옮기기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">netstat</td>
+<td style="width: 68.7209%; height: 20px;">현재 네트웍 상황 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">nice</td>
+<td style="width: 68.7209%; height: 20px;">프로세스&nbsp;우선&nbsp;순위&nbsp;변경하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">od</td>
+<td style="width: 68.7209%; height: 20px;">8진수로 파일 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">passwd</td>
+<td style="width: 68.7209%; height: 20px;">암호&nbsp;입력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">pidof</td>
+<td style="width: 68.7209%; height: 20px;">실행중인&nbsp;프로그램의&nbsp;프로세스&nbsp;ID&nbsp;찾기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">pine</td>
+<td style="width: 68.7209%; height: 20px;">메일&nbsp;관련</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ping</td>
+<td style="width: 68.7209%; height: 20px;">네트웍&nbsp;확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">popd</td>
+<td style="width: 68.7209%; height: 20px;">pushd&nbsp;취소하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ps</td>
+<td style="width: 68.7209%; height: 20px;">프로세스 상태 확인하기</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 31.2791%; height: 13px;">pstree</td>
+<td style="width: 68.7209%; height: 13px;">프로세스 상관관계 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">pwd</td>
+<td style="width: 68.7209%; height: 20px;">절대경로 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">quota</td>
+<td style="width: 68.7209%; height: 20px;">디스크 한계량 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rarp</td>
+<td style="width: 68.7209%; height: 20px;">rarp&nbsp;테이블&nbsp;관리하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rcp</td>
+<td style="width: 68.7209%; height: 20px;">원격&nbsp;호스트에&nbsp;파일&nbsp;복사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rdev</td>
+<td style="width: 68.7209%; height: 20px;">루트,&nbsp;스왑장치,&nbsp;램&nbsp;크기,&nbsp;비디오&nbsp;모드를&nbsp;조사하고&nbsp;설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rdate</td>
+<td style="width: 68.7209%; height: 20px;">네트웍으로&nbsp;시간&nbsp;설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">reboot</td>
+<td style="width: 68.7209%; height: 20px;">재부팅하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">readonly</td>
+<td style="width: 68.7209%; height: 20px;">읽기&nbsp;전용으로&nbsp;표시하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">renice</td>
+<td style="width: 68.7209%; height: 20px;">프로세스&nbsp;우선&nbsp;순위&nbsp;바꾸기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">reset</td>
+<td style="width: 68.7209%; height: 20px;">터미널&nbsp;초기화하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">restore</td>
+<td style="width: 68.7209%; height: 20px;">다시&nbsp;저장하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rlogin</td>
+<td style="width: 68.7209%; height: 20px;">바로&nbsp;접속하기</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 31.2791%; height: 21px;">rm</td>
+<td style="width: 68.7209%; height: 21px;">파일&nbsp;지우기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rmdir&nbsp;</td>
+<td style="width: 68.7209%; height: 20px;">디렉토리&nbsp;지우기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">route</td>
+<td style="width: 68.7209%; height: 20px;">라우팅&nbsp;테이블&nbsp;추가/삭제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rpm</td>
+<td style="width: 68.7209%; height: 20px;">프로그램&nbsp;추가/삭제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rpm2cpio</td>
+<td style="width: 68.7209%; height: 20px;">rpm을&nbsp;cpio로&nbsp;변환하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rsh</td>
+<td style="width: 68.7209%; height: 20px;">원격으로&nbsp;명령어&nbsp;실행하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rup</td>
+<td style="width: 68.7209%; height: 20px;">호스트&nbsp;상태&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rusers</td>
+<td style="width: 68.7209%; height: 20px;">호스트에&nbsp;로그인한&nbsp;사용자&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">rwall</td>
+<td style="width: 68.7209%; height: 20px;">호스트&nbsp;사용자에게&nbsp;메시지&nbsp;뿌리기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">script</td>
+<td style="width: 68.7209%; height: 20px;">기록하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">set</td>
+<td style="width: 68.7209%; height: 20px;">변수값&nbsp;설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">setup</td>
+<td style="width: 68.7209%; height: 20px;">시스템&nbsp;관련&nbsp;설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">showmount</td>
+<td style="width: 68.7209%; height: 20px;">호스트의&nbsp;마운트&nbsp;정보&nbsp;보여주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">shutdown</td>
+<td style="width: 68.7209%; height: 20px;">전원&nbsp;끄기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">sleep</td>
+<td style="width: 68.7209%; height: 20px;">잠시&nbsp;쉬기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">source</td>
+<td style="width: 68.7209%; height: 20px;">스크립트&nbsp;번역하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">split</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;나누기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ssh</td>
+<td style="width: 68.7209%; height: 20px;">암호화된&nbsp;원격&nbsp;로그인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">stty</td>
+<td style="width: 68.7209%; height: 20px;">터미널라인&nbsp;설정&nbsp;보여주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">su</td>
+<td style="width: 68.7209%; height: 20px;">계정&nbsp;바꾸기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">suspend</td>
+<td style="width: 68.7209%; height: 20px;">셸&nbsp;중단하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">swapoff&nbsp;</td>
+<td style="width: 68.7209%; height: 20px;">스왑&nbsp;해제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">swapon</td>
+<td style="width: 68.7209%; height: 20px;">스왑&nbsp;활성화하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">sync</td>
+<td style="width: 68.7209%; height: 20px;">버퍼&nbsp;재설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">syslogd</td>
+<td style="width: 68.7209%; height: 20px;">로그인&nbsp;과정&nbsp;설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">tac</td>
+<td style="width: 68.7209%; height: 20px;">거꾸로&nbsp;보기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">tail</td>
+<td style="width: 68.7209%; height: 20px;">문서&nbsp;끝부분&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">talk</td>
+<td style="width: 68.7209%; height: 20px;">이야기하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">tar</td>
+<td style="width: 68.7209%; height: 20px;">파일&nbsp;묶기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">tcpdchk</td>
+<td style="width: 68.7209%; height: 20px;">tcp&nbsp;wrapper&nbsp;설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">tcpmatch</td>
+<td style="width: 68.7209%; height: 20px;">네트웍&nbsp;요청에&nbsp;대해&nbsp;예측하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">tee</td>
+<td style="width: 68.7209%; height: 20px;">표준&nbsp;입력으로부터&nbsp;표준&nbsp;출력&nbsp;만들기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">telnet</td>
+<td style="width: 68.7209%; height: 20px;">원격접속하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">test</td>
+<td style="width: 68.7209%; height: 20px;">테스트하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">times</td>
+<td style="width: 68.7209%; height: 20px;">셸에서의&nbsp;사용자와&nbsp;시스템&nbsp;시간&nbsp;출력하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">top</td>
+<td style="width: 68.7209%; height: 20px;">cpu&nbsp;프로세스&nbsp;상황&nbsp;보여주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">tr</td>
+<td style="width: 68.7209%; height: 20px;">문자열&nbsp;바꿔주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 22px;">true</td>
+<td style="width: 68.7209%; height: 22px;">종료&nbsp;코드&nbsp;리턴하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">type</td>
+<td style="width: 68.7209%; height: 20px;">유형&nbsp;보기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ul</td>
+<td style="width: 68.7209%; height: 20px;">밑줄&nbsp;처리해서&nbsp;보여주기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ulimit</td>
+<td style="width: 68.7209%; height: 20px;">제한하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">umask</td>
+<td style="width: 68.7209%; height: 20px;">마스크 모드 설정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">umount</td>
+<td style="width: 68.7209%; height: 20px;">장치 연결 해제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">unalias</td>
+<td style="width: 68.7209%; height: 20px;">별명&nbsp;제거하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">uname</td>
+<td style="width: 68.7209%; height: 20px;">시스템&nbsp;정보&nbsp;보기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">unexpand</td>
+<td style="width: 68.7209%; height: 20px;">공백&nbsp;문자를&nbsp;탭으로&nbsp;변환하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">uniq</td>
+<td style="width: 68.7209%; height: 20px;">중복된&nbsp;문장&nbsp;찾기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">useradd</td>
+<td style="width: 68.7209%; height: 20px;">사용자&nbsp;계정&nbsp;만들기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">userdel</td>
+<td style="width: 68.7209%; height: 20px;">계정&nbsp;삭제하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">usermod</td>
+<td style="width: 68.7209%; height: 20px;">사용자&nbsp;계정정보&nbsp;수정하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">unset</td>
+<td style="width: 68.7209%; height: 20px;">설정&nbsp;변수&nbsp;해제</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">uptime</td>
+<td style="width: 68.7209%; height: 20px;">시스템 부하 평균 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">users</td>
+<td style="width: 68.7209%; height: 20px;">로그인된 사용자 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">w</td>
+<td style="width: 68.7209%; height: 20px;">시스템에 접속한 사용자 상황 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">wait</td>
+<td style="width: 68.7209%; height: 20px;">프로세스&nbsp;기다리기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">wall</td>
+<td style="width: 68.7209%; height: 20px;">모든&nbsp;사용자에게&nbsp;메시지&nbsp;보내기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">wc</td>
+<td style="width: 68.7209%; height: 20px;">문자,&nbsp;단어,&nbsp;라인수&nbsp;세기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">whatis</td>
+<td style="width: 68.7209%; height: 20px;">명령어의&nbsp;간단한&nbsp;설명보기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">while</td>
+<td style="width: 68.7209%; height: 20px;">루프&nbsp;명령어</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">who</td>
+<td style="width: 68.7209%; height: 20px;">사용자 확인하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">write</td>
+<td style="width: 68.7209%; height: 20px;">콘솔&nbsp;상에서&nbsp;간단한&nbsp;메시지&nbsp;보내기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">xcopy</td>
+<td style="width: 68.7209%; height: 20px;">반복적으로&nbsp;복사하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ypchfn</td>
+<td style="width: 68.7209%; height: 20px;">NIS에서&nbsp;사용하는&nbsp;chfn&nbsp;명령어</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">ypchsh</td>
+<td style="width: 68.7209%; height: 20px;">NIS에서&nbsp;사용하는&nbsp;chsh&nbsp;명령어</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">yppasswd</td>
+<td style="width: 68.7209%; height: 20px;">NIS에서&nbsp;사용하는&nbsp;passwd&nbsp;명령어</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">zcat</td>
+<td style="width: 68.7209%; height: 20px;">압축&nbsp;파일&nbsp;보기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">zcmp</td>
+<td style="width: 68.7209%; height: 20px;">압축&nbsp;파일&nbsp;비교하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">zforce</td>
+<td style="width: 68.7209%; height: 20px;">강제로&nbsp;gz&nbsp;만들기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">zgrep</td>
+<td style="width: 68.7209%; height: 20px;">압축&nbsp;상태에서&nbsp;grep&nbsp;실행하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">zmore</td>
+<td style="width: 68.7209%; height: 20px;">압축&nbsp;상태에서&nbsp;more&nbsp;실행하기</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 31.2791%; height: 20px;">znew</td>
+<td style="width: 68.7209%; height: 20px;">.Z&nbsp;파일을&nbsp;.gz로&nbsp;다시&nbsp;압축하기</td>
+</tr>
+</tbody>
+</table></div>
+<p>본 명령어는 우분투 기준으로 작성되었습니다.</p>
+<p>출처 : <a href="https://blog.naver.com/yahweh0">https://blog.naver.com/yahweh0</a></p><div class="container_postbtn #post_button_group">
+    <div class="postbtn_like">
+        
+<script>
+    window.ReactionButtonType = 'reaction';
+    window.ReactionApiUrl = '//coding-factory.tistory.com/reaction';
+    window.ReactionReqBody = {
+        entryId: 504    }
+</script>
+<div class="wrap_btn" id="reaction-504"><button class="btn_post uoc-icon"><div class="uoc-icon"><span class="ico_postbtn ico_like">좋아요</span><span class="txt_like uoc-count">2</span></div></button></div>
+<script src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/reaction-button-container.min.js.download"></script>
+        <div class="wrap_btn wrap_btn_share">
+    <button type="button" class="btn_post sns_btn btn_share" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRAO8a%2FbtqCF7in5jo%2FbmzxBt56Ke3HFzgfVQm8qk%2Fimg.png" data-title="[Linux] 리눅스 터미널 명령어 모음 총정리" data-description="리눅스 명령어 모음집 명령어 설명 alias 명령어 간소화 apropos 관련 명령어 검색하기 arch 컴퓨터 종류 확인하기 arp 같은 서브넷 IP 조회하기 at 작업시간 설정하기 atd 계획성 있는 작업 실행하기 awk 특정.." data-profile-image="https://tistory3.daumcdn.net/tistory/2826541/attach/f3c51d35915945aba94d36eda4c78264" data-profile-name="코딩팩토리" data-pc-url="https://coding-factory.tistory.com/504" data-relative-pc-url="/504" data-blog-title="코딩팩토리">
+        <span class="ico_postbtn ico_share">공유하기</span>
+    </button>
+</div>
+                <div class="wrap_btn wrap_btn_etc" data-entry-id="504" data-entry-visibility="public" data-category-visibility="public">
+    <button type="button" class="btn_post btn_etc2"><span class="ico_postbtn ico_etc">글 요소</span></button>
+</div>
+    </div>
+    <button type="button" class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="2826541" data-url="https://coding-factory.tistory.com/504" data-device="web_pc">
+    <em class="txt_state">구독하기</em>
+    <strong class="txt_tool_id">코딩팩토리</strong>
+    <span class="img_common_tistory ico_check_type1"></span>
+</button>
+    <div class="postbtn_ccl" data-ccl-type="1">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko" target="_blank" class="link_ccl" rel="license">
+        <span class="bundle_ccl">
+            <span class="ico_postbtn ico_ccl1">저작자표시</span><span class="ico_postbtn ico_ccl2">비영리</span><span class="ico_postbtn ico_ccl3">변경금지</span>        </span>
+    </a>
+</div>
+    <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Work rdf:about="">
+        <license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" />
+    </Work>
+    <License rdf:about="http://creativecommons.org/licenses/by-nc-nd/">
+        <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+                        <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/>
+            </License>
+</rdf:RDF>
+-->
+</div><div class="another_category another_category_color_gray">
+<h4>'<a href="https://coding-factory.tistory.com/category/OS">OS</a>&nbsp;&gt;&nbsp;<a href="https://coding-factory.tistory.com/category/OS/Linux">Linux</a>' 카테고리의 다른 글</h4>
+<div class="jb-responsive-table"><table>
+<tbody><tr>
+<th>
+<a href="https://coding-factory.tistory.com/506">[Linux] 리눅스 편집기 vi 환경설정 하는 법</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.03.18</td>
+</tr>
+<tr>
+<th>
+<a href="https://coding-factory.tistory.com/505">[Linux] 리눅스 문서 편집기 vi 사용법 &amp; 명령어 총정리</a>&nbsp;&nbsp;<span>(2)</span>
+</th>
+<td>
+2020.03.17</td>
+</tr>
+<tr>
+<th>
+<a href="https://coding-factory.tistory.com/504" class="current">[Linux] 리눅스 터미널 명령어 모음 총정리</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.03.16</td>
+</tr>
+<tr>
+<th>
+<a href="https://coding-factory.tistory.com/503">[Linux] 우분투 안드로이드 스튜디오 설치 / 다운로드 방법</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.03.15</td>
+</tr>
+<tr>
+<th>
+<a href="https://coding-factory.tistory.com/502">[Linux] 우분투 Git 설치 / 다운로드 &amp; 사용 방법</a>&nbsp;&nbsp;<span>(2)</span>
+</th>
+<td>
+2020.03.14</td>
+</tr>
+</tbody></table></div></div></div></div>
+									</div>
+								</section>
+								<!-- 탭 안보이게 수정
+								
+									<p class="jb-article-tag"><span class="jb-article-tag-list"><a href="/tag/%EB%A6%AC%EB%88%85%EC%8A%A4"  rel="tag">리눅스</a>,
+<a href="/tag/%EB%A6%AC%EB%88%85%EC%8A%A4%EB%AA%85%EB%A0%B9%EC%96%B4%EB%AA%A8%EC%9D%8C"  rel="tag">리눅스명령어모음</a>,
+<a href="/tag/%EB%AA%85%EB%A0%B9%EC%96%B4"  rel="tag">명령어</a>,
+<a href="/tag/%ED%84%B0%EB%AF%B8%EB%84%90"  rel="tag">터미널</a></span></p>
+								-->
+								
+								<!--일치하는 애드센스 추가-->
+<ins class="adsbygoogle" style="display: block; height: 385px;" data-ad-format="autorelaxed" data-ad-client="ca-pub-1613265522541448" data-ad-slot="6764794809" data-matched-content-rows-num="2" data-matched-content-columns-num="4" data-matched-content-ui-type="image_card_stacked" data-adsbygoogle-status="done" data-ad-status="filled">
+		 <ins id="aswift_3_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 385px; width: 770px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_3_anchor" style="border: none; height: 385px; width: 770px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0;width:770px;height:385px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="770" height="385" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1613265522541448&amp;output=html&amp;h=385&amp;slotname=6764794809&amp;adk=399735535&amp;adf=2737672434&amp;pi=t.ma~as.6764794809&amp;w=770&amp;cr_col=4&amp;cr_row=2&amp;lmt=1644151450&amp;rafmt=9&amp;psa=1&amp;format=770x385&amp;url=https%3A%2F%2Fcoding-factory.tistory.com%2F504&amp;flash=0&amp;host=ca-host-pub-9691043933427338&amp;crui=pub_control_image_card_stacked&amp;wgl=1&amp;adsid=ChEIgID-jwYQn6712YL3mL-tARI9AMq5r6r-h4CWHUZDJjDwZeORQ1pw98c1_UPbxUq-zG8cW0A6GXnJsEcV33VYDJ9SqO9BKAg8d2hmIWdp8Q&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0IixbXV0.&amp;dt=1644151414928&amp;bpp=2&amp;bdt=708&amp;idt=180&amp;shv=r20220201&amp;mjsv=m202202010101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D73c10c003e944900-22cb628889ce0031%3AT%3D1635848484%3ART%3D1635848484%3AS%3DALNI_Ma5iX9W7En6W1GtgpdzUHnk00qV3A&amp;prev_fmts=0x0%2C336x280%2C336x280%2C278x250%2C278x250%2C1019x950%2C1005x124&amp;nras=3&amp;correlator=8635315014613&amp;frm=20&amp;pv=1&amp;ga_vid=2024643386.1635848483&amp;ga_sid=1644151415&amp;ga_hid=772236761&amp;ga_fc=1&amp;ga_cid=1594061204.1644059969&amp;u_tz=540&amp;u_his=1&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1858&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=30&amp;ady=12620&amp;biw=1019&amp;bih=893&amp;scr_x=7&amp;scr_y=9115&amp;eid=42531398%2C44750773%2C31064036%2C31064729%2C21067496&amp;oid=2&amp;psts=AGkb-H92FX0D8JYN0wkv5anVFfXfzENIxVJ5jE3yIAgjfDktisVou-f8Zw1CPaOaBy36wx2DwP7-vclU8r-ynQ%2CAGkb-H_RggAkiBhGmYtbkZP0_KbUUxBfDGSJRoGaLOkAUgx90WS8vWtMOePV8u8axKPYDxaxLIFh7UARzD3Z%2CAGkb-H82YY99bSHjRem_RSCaC8ak7MNos673mCCES-C9iKlp_F3qQvmX5Pctz7onN8wcWcDo-iGqIua_hbc%2CAGkb-H-A34pr_2GLK8KZQUQXuUXi6Rx8-bHMNBBKVYNX_RHCOdI6pTS_htQQFMheND-O0SPoR-UthKQp3_KnL-6ywC8HexV8SnPr-GvpgyY&amp;pvsid=3793467603821542&amp;pem=889&amp;tmod=207480387&amp;uas=1&amp;nvt=1&amp;ref=https%3A%2F%2Fcoding-factory.tistory.com%2Fcategory%2FOS%2FLinux%3Fpage%3D2&amp;eae=0&amp;fc=1920&amp;brdim=813%2C0%2C813%2C0%2C1858%2C0%2C1052%2C1087%2C1036%2C910&amp;vis=1&amp;rsz=%7C%7CeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=1152&amp;bc=31&amp;ifi=4&amp;uci=a!4&amp;btvi=4&amp;fsb=1&amp;xpc=dvyjccwHN5&amp;p=https%3A//coding-factory.tistory.com&amp;dtd=35280" data-google-container-id="a!4" data-google-query-id="CPG_v7iN6_UCFQuVvAod3JEJUQ" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+								
+								
+								<!-- 본문 하단 -->
+								
+								<p class="jb-discuss-count">
+									<span class="jb-discuss-count-reply"><a href="https://coding-factory.tistory.com/504#rp" onclick=""><span class="jb-discuss-count-label">댓글</span><span id="commentCount504_0"><span class="jb-discuss-count-number">(0)</span></span></a></span>
+								</p>
+								<div id="entry504Comment">
+									
+									<form method="post" action="https://coding-factory.tistory.com/comment/add/504" onsubmit="return false" style="margin: 0">
+										<div class="jb-wrap-form-discuss jb-wrap-form-discuss-reply">
+											
+												
+												<div class="jb-form-discuss jb-form-discuss-secret jb-form-discuss-table">
+													<div class="jb-form-discuss-table-row">
+														<div class="jb-form-discuss-table-cell jb-form-discuss-table-cell-checkbox">
+															<input type="checkbox" id="secret" name="secret" value="1" class="jb-form-input-checkbox">
+															<label for="secret" class="jb-form-label jb-form-label-secret jb-form-label-secret-icon"></label>
+														</div>
+														<div class="jb-form-discuss-table-cell jb-form-discuss-table-cell-label">
+															<label for="secret" class="jb-form-label jb-form-label-secret jb-form-label-secret-text">비밀 글</label>
+														</div>
+													</div>
+												</div>
+											
+											<div class="jb-form-discuss jb-form-discuss-content">
+												<textarea name="comment" class="jb-form-textarea"></textarea>
+											</div>
+											<div class="jb-form-discuss jb-form-discuss-submit">
+												<button onclick="addComment(this, 504); return false;" class="jb-form-button">등록</button>
+											</div>
+										</div>
+									</form>
+								</div><script type="text/javascript">loadedComments[504]=true;findFragmentAndHighlight(504)</script>
+							</article>
+						</div>
+					
+				
+				
+					<div class="jb-cell jb-cell-pagination">
+						<div class="jb-pagination">
+							<ul>
+								<li><a href="https://coding-factory.tistory.com/505"><i class="xi-angle-left-min"></i></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/815"><span>1</span></a></li>
+								
+									<li><a><span>···</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/508"><span>300</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/507"><span>301</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/506"><span>302</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/505"><span>303</span></a></li>
+								
+									<li class="jb-active"><a><span class="selected">304</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/503"><span>305</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/502"><span>306</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/501"><span>307</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/500"><span>308</span></a></li>
+								
+									<li><a><span>···</span></a></li>
+								
+									<li><a href="https://coding-factory.tistory.com/1"><span>743</span></a></li>
+								
+								<li><a href="https://coding-factory.tistory.com/503"><i class="xi-angle-right-min"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				
+			</div>
+			<div class="jb-column jb-column-sidebar" style="height: auto !important;">
+				<aside style="height: auto !important;">
+					<h2 class="jb-section-title jb-section-title-sidebar">Sidebar - Right</h2>
+					<!-- 오른쪽 사이드바 --><!-- 블로그 정보 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-blog-information">
+								<div class="jb-module-title jb-module-title-blog-information">
+									<h3>블로그 정보</h3>
+								</div>
+								<div class="jb-module-content jb-module-content-blog-information">
+									<p class="jb-blog-information jb-blog-information-image"><img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/f3c51d35915945aba94d36eda4c78264" alt="코딩팩토리"></p>
+									<p class="jb-blog-information jb-blog-information-blogger"><a href="https://coding-factory.tistory.com/pages/profile"><u>코딩팩토리</u></a></p>
+									<p class="jb-blog-information jb-blog-information-description">My life depends on my efforts</p>
+								</div>
+							</div>
+						<!-- 카테고리 - 접기 펴기 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-category jb-cell-module-category-fold">
+								<div class="jb-module-title jb-module-title-category jb-module-title-category-fold">
+									<h3>카테고리</h3>
+								</div>
+								<div class="jb-module-content jb-module-content-category jb-module-content-category-fold">
+									<ul class="tt_category">
+	<li class="">
+		<a class="link_tit" href="https://coding-factory.tistory.com/category">
+			분류 전체보기							<span class="c_cnt">(743)</span>
+			
+							<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+					</a>
+
+				<ul class="category_list">
+							<li class="">
+					<a class="link_item jb-category-has-sub">
+						Language													<span class="c_cnt">(177)</span>
+						
+													<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Language/C%20%20%2C%20%20%20C%2B%2B%20%20%2C%20%20C%23">
+									C  ,   C++  ,  C#
+																			<span class="c_cnt">(87)</span>
+									
+																			<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Language/Java">
+									Java
+																			<span class="c_cnt">(85)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Language/Assembly">
+									Assembly
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item jb-category-has-sub">
+						Web													<span class="c_cnt">(97)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Web%20programming">
+									Web programming
+																			<span class="c_cnt">(20)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Html">
+									Html
+																			<span class="c_cnt">(18)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/JavaScript">
+									JavaScript
+																			<span class="c_cnt">(15)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Ajax">
+									Ajax
+																			<span class="c_cnt">(4)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Web/Jsp">
+									Jsp
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item jb-category-has-sub">
+						Mobile													<span class="c_cnt">(44)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/Mobile/Android">
+									Android
+																			<span class="c_cnt">(26)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item jb-category-has-sub">
+						DB													<span class="c_cnt">(127)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/DB/Database%20Knowledge">
+									Database Knowledge
+																			<span class="c_cnt">(23)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/DB/Oracle">
+									Oracle
+																			<span class="c_cnt">(74)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/DB/MSSQL">
+									MSSQL
+																			<span class="c_cnt">(29)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item jb-category-has-sub">
+						OS													<span class="c_cnt">(104)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/OS/Linux">
+									Linux
+																			<span class="c_cnt">(38)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/OS/Windows">
+									Windows
+																			<span class="c_cnt">(52)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item jb-category-has-sub">
+						ETC.													<span class="c_cnt">(106)</span>
+						
+													<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Spring">
+									Spring
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Unity">
+									Unity
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Algorithm">
+									Algorithm
+																			<span class="c_cnt">(38)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Design%20Pattern">
+									Design Pattern
+																			<span class="c_cnt">(6)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./IDE">
+									IDE
+																			<span class="c_cnt">(22)</span>
+									
+																			<img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/new_ico_1.gif" alt="N" style="vertical-align:middle;padding-left:2px;">
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./Git">
+									Git
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./DevTools">
+									DevTools
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/ETC./HardWare">
+									HardWare
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item jb-category-has-sub">
+						일상													<span class="c_cnt">(88)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81/%EC%9E%90%EC%9C%A0%EC%97%AC%ED%96%89">
+									자유여행
+																			<span class="c_cnt">(8)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8">
+									블로그
+																			<span class="c_cnt">(28)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://coding-factory.tistory.com/category/%EC%9D%BC%EC%83%81/%EC%A0%9C%ED%92%88%EB%A6%AC%EB%B7%B0">
+									제품리뷰
+																			<span class="c_cnt">(28)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+					</ul>
+			</li>
+</ul>
+									
+									<ul class="category_list" style="margin-top:0px">
+<li>
+<a class="link_item jb-category-brunch-sub" href="https://brunch.co.kr/@e8362cab2f0c484#articles" target="_blank" title="branch">
+생각 정리
+<span class="c_cnt">(brunch)</span>
+</a>
+</li>
+</ul>
+								</div>
+							</div>
+						<!-- Adsence -->
+							<div class="jb-cell jb-cell-module jb-cell-module-adsence" style="height: auto !important;">
+								<div class="jb-module-title jb-module-title-links">
+									<h3>애드센스</h3>
+								</div>
+								<!-- 반응형 광고 -->
+								<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-1613265522541448" data-ad-slot="1033485811" data-ad-format="auto" data-language="ko" data-full-width-responsive="false" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_4_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 250px; width: 278px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_4_anchor" style="border: none; height: 250px; width: 278px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block; overflow: visible;"><iframe id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;border:0;width:278px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="278" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/ads(2).html" data-google-container-id="a!5" data-google-query-id="CJXq3aeN6_UCFVcDXAodl-sAow" data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+						<!-- 최근 글 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-recent-posts">
+								<div class="jb-module-title jb-module-title-recent-posts">
+									<h3>최근 글</h3>
+								</div>
+								<div class="jb-module-content jb-module-content-recent-posts jb-module-content-list">
+									<ul>
+										
+											<li><a href="https://coding-factory.tistory.com/815"><span class="jb-module-list-table"><span class="jb-module-list-table-row"><span class="jb-module-list-table-cell jb-module-list-table-cell-1"><img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/saved_resource" alt="rctps_rep_thumbnail"></span><span class="jb-module-list-table-cell jb-module-list-table-cell-2"><span class="jb-recent-posts-title">[C언어] C언어로 만든 간단한 슈팅게임 (+ 소스 코드)</span><span class="jb-recent-posts-reply-count"><span id="commentCountOnRecentEntries815"><i class="xi-message-o"></i>1</span></span><span class="jb-recent-posts-author">코딩팩토리</span></span></span></span></a></li>
+										
+
+											<li><a href="https://coding-factory.tistory.com/814"><span class="jb-module-list-table"><span class="jb-module-list-table-row"><span class="jb-module-list-table-cell jb-module-list-table-cell-1"><img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/saved_resource(1)" alt="rctps_rep_thumbnail"></span><span class="jb-module-list-table-cell jb-module-list-table-cell-2"><span class="jb-recent-posts-title">[IDE] 비주얼 스튜디오(Visual Studio) GitHub 연동 방법</span><span class="jb-recent-posts-reply-count"><span id="commentCountOnRecentEntries814"></span></span><span class="jb-recent-posts-author">코딩팩토리</span></span></span></span></a></li>
+										
+
+											<li><a href="https://coding-factory.tistory.com/813"><span class="jb-module-list-table"><span class="jb-module-list-table-row"><span class="jb-module-list-table-cell jb-module-list-table-cell-1"><img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/saved_resource(2)" alt="rctps_rep_thumbnail"></span><span class="jb-module-list-table-cell jb-module-list-table-cell-2"><span class="jb-recent-posts-title">[블로그] 2021년 블로그 결산 (+ 앞으로의 계획)</span><span class="jb-recent-posts-reply-count"><span id="commentCountOnRecentEntries813"><i class="xi-message-o"></i>33</span></span><span class="jb-recent-posts-author">코딩팩토리</span></span></span></span></a></li>
+										
+
+											<li><a href="https://coding-factory.tistory.com/812"><span class="jb-module-list-table"><span class="jb-module-list-table-row"><span class="jb-module-list-table-cell jb-module-list-table-cell-1"><img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/saved_resource(3)" alt="rctps_rep_thumbnail"></span><span class="jb-module-list-table-cell jb-module-list-table-cell-2"><span class="jb-recent-posts-title">[IDE] 이클립스 A java Runtime Environment (JRE) ...⋯</span><span class="jb-recent-posts-reply-count"><span id="commentCountOnRecentEntries812"></span></span><span class="jb-recent-posts-author">코딩팩토리</span></span></span></span></a></li>
+										
+
+											<li><a href="https://coding-factory.tistory.com/811"><span class="jb-module-list-table"><span class="jb-module-list-table-row"><span class="jb-module-list-table-cell jb-module-list-table-cell-1"><img src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/saved_resource(4)" alt="rctps_rep_thumbnail"></span><span class="jb-module-list-table-cell jb-module-list-table-cell-2"><span class="jb-recent-posts-title">[Web] UTF-8 / EUC-KR 문자열 인코딩 변환 사이트</span><span class="jb-recent-posts-reply-count"><span id="commentCountOnRecentEntries811"><i class="xi-message-o"></i>4</span></span><span class="jb-recent-posts-author">코딩팩토리</span></span></span></span></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						<!-- 최근 댓글 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-recent-replies">
+								<div class="jb-module-title jb-module-title-recent-replies">
+									<h3>최근 댓글</h3>
+								</div>
+								<div class="jb-module-content jb-module-content-recent-replies jb-module-content-list">
+									<ul>
+										
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/486#comment17212891"><span class="jb-recent-replies-title">정품인증하라고하는데 전화로 인증이 없⋯</span><span class="jb-recent-replies-name">율무차</span><span class="jb-recent-replies-time">02.05</span></a></span></li>
+										
+
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/486#comment17212886"><span class="jb-recent-replies-title">제품키 인증 창이 뜨지않고 프로 구입했⋯</span><span class="jb-recent-replies-name">율무차</span><span class="jb-recent-replies-time">02.05</span></a></span></li>
+										
+
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/815#comment17212682"><span class="jb-recent-replies-title">재밌게 만드셨네요 ㅋㅋ 잘 보다 갑니다</span><span class="jb-recent-replies-name">인파_</span><span class="jb-recent-replies-time">02.05</span></a></span></li>
+										
+
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/486#comment17211304"><span class="jb-recent-replies-title">티몬으로 윈도우정품구입했는데 컴퓨터⋯</span><span class="jb-recent-replies-name">reeree</span><span class="jb-recent-replies-time">02.04</span></a></span></li>
+										
+
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/755#comment17211156"><span class="jb-recent-replies-title">Equal인데 오타가 끼어있었네요. 수정해⋯</span><span class="jb-recent-replies-name">코딩팩토리</span><span class="jb-recent-replies-time">02.04</span></a></span></li>
+										
+									</ul>
+								</div>
+							</div>
+						<!-- Adsence2 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-adsence" style="height: auto !important;">
+								<div class="jb-module-title jb-module-title-links">
+									<h3>애드센스</h3>
+								</div>
+								<!-- 반응형 광고 -->
+								<ins class="adsbygoogle" style="display: block; height: 278px; width: 278px;" data-ad-client="ca-pub-1613265522541448" data-ad-slot="1033485811" data-ad-format="auto" data-language="ko" data-full-width-responsive="false" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_5_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 278px; width: 278px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_5_anchor" style="border: none; height: 278px; width: 278px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block; overflow: hidden;"><iframe id="aswift_5" name="aswift_5" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 278px; height: 278px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="278" height="278" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/ads(3).html" data-google-container-id="a!6" data-google-query-id="CI7p3qeN6_UCFYlCvAodeNoLkA" data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+						<!-- 달력 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-calendar">
+								<div class="jb-module-title jb-module-title-calendar">
+									<h3>달력</h3>
+								</div>
+								<div class="jb-module-content jb-module-content-calendar">
+											<table class="tt-calendar" cellpadding="0" cellspacing="1" style="width: 100%; table-layout: fixed">
+			<caption class="cal_month">
+				<a href="https://coding-factory.tistory.com/archive/202201" title="1개월 앞의 달력을 보여줍니다.">«</a>
+				&nbsp;
+				<a href="https://coding-factory.tistory.com/archive/202202" title="현재 달의 달력을 보여줍니다.">2022/02</a>
+				&nbsp;
+				<a href="https://coding-factory.tistory.com/archive/202203" title="1개월 뒤의 달력을 보여줍니다.">»</a>
+			</caption>
+			<thead>
+			<tr>
+				<th class="cal_week2">일</th>
+				<th class="cal_week1">월</th>
+				<th class="cal_week1">화</th>
+				<th class="cal_week1">수</th>
+				<th class="cal_week1">목</th>
+				<th class="cal_week1">금</th>
+				<th class="cal_week1">토</th>
+			</tr>
+			</thead>
+			<tbody>
+					<tr class="cal_week">
+			<td class="cal_day1">&nbsp;</td>
+			<td class="cal_day1">&nbsp;</td>
+			<td class=" cal_day cal_day3">1</td>
+			<td class="cal_day cal_day3 jb-day-has-post"><a class="cal_click" href="https://coding-factory.tistory.com/archive/20220202">2</a></td>
+			<td class="cal_day cal_day3 jb-day-has-post"><a class="cal_click" href="https://coding-factory.tistory.com/archive/20220203">3</a></td>
+			<td class=" cal_day cal_day3">4</td>
+			<td class=" cal_day cal_day3">5</td>
+		</tr>
+		<tr class="cal_week cal_current_week">
+			<td class=" cal_day cal_day_sunday cal_day4">6</td>
+			<td class=" cal_day cal_day3">7</td>
+			<td class=" cal_day cal_day3">8</td>
+			<td class=" cal_day cal_day3">9</td>
+			<td class=" cal_day cal_day3">10</td>
+			<td class=" cal_day cal_day3">11</td>
+			<td class=" cal_day cal_day3">12</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">13</td>
+			<td class=" cal_day cal_day3">14</td>
+			<td class=" cal_day cal_day3">15</td>
+			<td class=" cal_day cal_day3">16</td>
+			<td class=" cal_day cal_day3">17</td>
+			<td class=" cal_day cal_day3">18</td>
+			<td class=" cal_day cal_day3">19</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">20</td>
+			<td class=" cal_day cal_day3">21</td>
+			<td class=" cal_day cal_day3">22</td>
+			<td class=" cal_day cal_day3">23</td>
+			<td class=" cal_day cal_day3">24</td>
+			<td class=" cal_day cal_day3">25</td>
+			<td class=" cal_day cal_day3">26</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">27</td>
+			<td class=" cal_day cal_day3">28</td>
+			<td class="cal_day2">&nbsp;</td>
+			<td class="cal_day2">&nbsp;</td>
+			<td class="cal_day2">&nbsp;</td>
+			<td class="cal_day2">&nbsp;</td>
+			<td class="cal_day2">&nbsp;</td>
+		</tr>
+			</tbody>
+		</table>
+		
+								</div>
+							</div>
+						<!-- 통계 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-statistics">
+								<div class="jb-module-title jb-module-title-statistics">
+									<h3>통계</h3>
+								</div>
+								<div class="jb-module-content jb-module-content-statistics jb-module-content-list">
+									<ul>
+										<li><span class="jb-module-list"><span class="jb-statistics-label">전체 : </span><span class="jb-statistics-count">17,156,766</span></span></li>
+										<li><span class="jb-module-list"><span class="jb-statistics-label">오늘 : </span><span class="jb-statistics-count">7,247</span></span></li>
+										<li><span class="jb-module-list"><span class="jb-statistics-label">어제 : </span><span class="jb-statistics-count">9,037</span></span></li>
+									</ul>
+								</div>
+							</div>
+						 <!-- 보관함 -->
+							<div class="jb-cell jb-cell-module jb-cell-module-archives">
+								<div class="jb-module-title jb-module-title-archives">
+									<h3>보관함</h3>
+								</div>
+								<div class="jb-module-content jb-module-content-archives jb-module-content-list">
+									<ul>
+										
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/archive/202202"><span class="jb-archives-date">2022/02</span><span class="jb-archives-count">(2)</span></a></span></li>
+										
+
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/archive/202201"><span class="jb-archives-date">2022/01</span><span class="jb-archives-count">(1)</span></a></span></li>
+										
+
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/archive/202112"><span class="jb-archives-date">2021/12</span><span class="jb-archives-count">(7)</span></a></span></li>
+										
+
+											<li><span class="jb-module-list"><a href="https://coding-factory.tistory.com/archive/202111"><span class="jb-archives-date">2021/11</span><span class="jb-archives-count">(7)</span></a></span></li>
+										
+									</ul>
+								</div>
+							</div>
+						
+				</aside>
+			</div>
+		</div>
+		<div class="jb-row jb-row-line jb-row-line-main-bottom">
+			<div class="jb-column jb-column-line jb-column-line-main-bottom">
+				<div class="jb-line jb-line-main-bottom"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="jb-background jb-background-main-bottom" style="visibility: visible;">
+	<div class="jb-container jb-container-main-bottom">
+		<div class="jb-row jb-row-main-bottom">
+			<div class="jb-column jb-column-main-bottom">
+				<div class="jb-cell jb-cell-main-bottom">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="jb-background jb-background-foot" style="visibility: visible;">
+	<div class="jb-container jb-container-foot">
+		<div class="jb-row jb-row-line jb-row-line-foot-top">
+			<div class="jb-column jb-column-line jb-column-line-foot-top">
+				<div class="jb-line jb-line-foot-top"></div>
+			</div>
+		</div>
+		<div class="jb-row jb-row-foot">
+			<div class="jb-column jb-column-foot jb-column-foot-1">
+				<div class="jb-cell jb-cell-foot jb-cell-foot-1">
+					<div class="jb-copyright">
+						<h2>Copyright © 코딩팩토리 All Rights Reserved</h2>
+					</div>
+				</div>
+			</div>
+			<div class="jb-column jb-column-foot jb-column-foot-2">
+				<div class="jb-cell jb-cell-foot jb-cell-foot-2">
+					<div class="jb-designed">
+						<h2>Designed by <a href="https://www.jbfactory.net/" target="_blank">JB FACTORY</a></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jb-row jb-row-line jb-row-line-foot-bottom">
+			<div class="jb-column jb-column-line jb-column-line-foot-bottom">
+				<div class="jb-line jb-line-foot-bottom"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<a href="https://coding-factory.tistory.com/504#" class="jb-top" style="display: inline;"><i class="xi-arrow-up"></i></a>
+
+<script>
+	jQuery( document ).ready( function( $ ) {
+		// Frontpage, Notice
+			if ( $( 'body' ).attr( 'id' ) == 'tt-body-index' && jbCurrentUrl.indexOf( '/notice' ) < 0 && $( '#jb-cover-group' ).attr( 'class' ) !== 'jb-cover-group' ) {
+				$( 'body' ).addClass( 'jb-body-frontpage' );
+			}
+			if ( $( 'body' ).attr( 'id' ) == 'tt-body-index' && jbCurrentUrl.indexOf( '/notice' ) > -1 ) {
+				$( 'body' ).addClass( 'jb-body-notice' );
+			}
+			if ( $( 'body' ).attr( 'id' ) == 'tt-body-index' && $( '#jb-cover-group' ).attr( 'class' ) == 'jb-cover-group' ) {
+				$( 'body' ).addClass( 'jb-body-frontpage-cover' );
+			}
+		// Layout
+			$( '.jb-layout-02 .jb-column-sidebar' ).remove();
+		// Menu
+			$( '.jb-bars i' ).click( function() {
+				$( '.jb-header-table-cell-search' ).slideToggle();
+				$( '.jb-cell-navigation' ).slideToggle();
+			} );
+		// Admin Menu
+			$( '.jb-admin-button' ).click( function() {
+				$( '.jb-admin-menu' ).slideToggle();
+			} );
+		// Index
+			$( '.jb-cell-index' ).wrapAll( '<div class="jb-cell jb-cell-content jb-cell-content-index"><div class="jb-row-index"></div></div>' );
+			$( '.jb-index-table-cell-thumbnail a' ).not( ':has( .jb-index-thumbnail )' ).append( '<div class="jb-index-thumbnail jb-index-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-' + jbThumbnailSize + '.png" alt="thumbnail-no-image"></div>' );
+			$( 'body.jb-body-notice .jb-column-content' ).prepend( '<div class="jb-cell jb-cell-content jb-cell-content-notice-list"><header><div class="jb-content-title jb-content-title-notice-list"><h2>공지사항</h2></div></header></div>' );
+			$( 'body.jb-body-notice  .jb-index-table-cell-thumbnail-notice' ).each( function() {
+				var jbNoticeUrl = $( 'a', this ).attr( 'href' );
+				var jbNoticeThis = this;
+				$.ajax( {
+					url: jbNoticeUrl,
+					success: function( jbNoticeHtml ) {
+						var jbNoticeImgSrcStart = jbNoticeHtml.indexOf( 'meta property="og:image" content="' )+34;
+						var jbNoticeImgSrcEnd = jbNoticeHtml.indexOf( '"', jbNoticeImgSrcStart );
+						var jbNoticeImgSrc = jbNoticeHtml.substring( jbNoticeImgSrcStart, jbNoticeImgSrcEnd );
+						if ( typeof jbNoticeImgSrc !== 'undefined' && jbNoticeImgSrc.indexOf( '/icon/' ) < 0 ) {
+							jbNoticeImgSrc = '//i1.daumcdn.net/thumb/C' + jbThumbnailSize + '/?fname=' + jbNoticeImgSrc;
+							$( 'img', jbNoticeThis ).attr( 'src', jbNoticeImgSrc );
+						}
+					}
+				} );
+			} );
+		// Index Related
+			$( '.jb-cell-index-related' ).wrapAll( '<div class="jb-cell jb-cell-content jb-cell-content-index-related"><div class="jb-row-index-related"></div></div>' );
+			$( '.jb-index-related-table-cell-thumbnail a' ).not( ':has( .jb-index-related-thumbnail )' ).append( '<div class="jb-index-related-thumbnail jb-index-related-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-' + jbThumbnailSizeRelated + '.png" alt="jb-blank"></div>' );
+		// Cover Type 02
+			$( '.jb-cover-type-02 .jb-cover-table-cell-thumbnail a' ).not( ':has( .jb-cover-thumbnail )' ).append( '<div class="jb-cover-thumbnail jb-cover-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-300x300.png" alt="jb-blank"></div>' );
+		// Cover Type 03
+			$( '.jb-cover-type-03 .jb-cover-table-cell-thumbnail a' ).not( ':has( .jb-cover-thumbnail )' ).append( '<div class="jb-cover-thumbnail jb-cover-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-300x300.png" alt="jb-blank"></div>' );
+		// Cover Type 04
+			$( '.jb-cover-type-04 .jb-cover-table-cell-thumbnail a' ).not( ':has( .jb-cover-thumbnail )' ).append( '<div class="jb-cover-thumbnail jb-cover-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-400x300.png" alt="jb-blank"></div>' );
+		// Cover Type 05
+			$( '.jb-cover-type-05 .jb-cover-table-cell-thumbnail a' ).not( ':has( .jb-cover-thumbnail )' ).append( '<div class="jb-cover-thumbnail jb-cover-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-480x270.png" alt="jb-blank"></div>' );
+		// Cover Type 06
+			$( '.jb-cover-type-06 .jb-cover-table-cell-thumbnail a' ).not( ':has( .jb-cover-thumbnail )' ).append( '<div class="jb-cover-thumbnail jb-cover-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-480x640.png" alt="jb-blank"></div>' );
+		// Cover Type 105
+			$( '.jb-cover-type-105 .jb-cover-table-cell-thumbnail a' ).not( ':has( .jb-cover-thumbnail )' ).append( '<div class="jb-cover-thumbnail jb-cover-thumbnail-no-image"><img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-480x270.png" alt="jb-blank"></div>' );
+		// Cover Slider Type 01
+			$( '.jb-cover-slider-type-01 .jb-slider a' ).each( function() {
+				var jbSliderCaption = $( '.jb-slider-caption', this ).text();
+				$( 'img', this ).attr( 'title', jbSliderCaption );
+			} );
+			$( '.jb-cover-slider-type-01 .jb-slider' ).nivoSlider( {
+				effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+				slices: 15, // For slice animations
+				boxCols: 8, // For box animations
+				boxRows: 4, // For box animations
+				animSpeed: 500, // Slide transition speed
+				pauseTime: 4000, // How long each slide will show
+				startSlide: 0, // Set starting Slide (0 index)
+				directionNav: true, // Next & Prev navigation
+				controlNav: true, // 1,2,3... navigation
+				controlNavThumbs: false, // Use thumbnails for Control Nav
+				pauseOnHover: true, // Stop animation while hovering
+				manualAdvance: false, // Force manual transitions
+				prevText: 'Prev', // Prev directionNav text
+				nextText: 'Next', // Next directionNav text
+				randomStart: false, // Start on a random slide
+				beforeChange: function(){}, // Triggers before a slide transition
+				afterChange: function(){}, // Triggers after a slide transition
+				slideshowEnd: function(){}, // Triggers after all slides have been shown
+				lastSlide: function(){}, // Triggers when last slide is shown
+				afterLoad: function(){} // Triggers when slider has loaded
+			} );
+		// Cover Slider Type 02
+			$( '.jb-cover-slider-type-02 .jb-slider' ).nivoSlider( {
+				effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+				slices: 15, // For slice animations
+				boxCols: 8, // For box animations
+				boxRows: 4, // For box animations
+				animSpeed: 500, // Slide transition speed
+				pauseTime: 4000, // How long each slide will show
+				startSlide: 0, // Set starting Slide (0 index)
+				directionNav: true, // Next & Prev navigation
+				controlNav: true, // 1,2,3... navigation
+				controlNavThumbs: false, // Use thumbnails for Control Nav
+				pauseOnHover: true, // Stop animation while hovering
+				manualAdvance: false, // Force manual transitions
+				prevText: 'Prev', // Prev directionNav text
+				nextText: 'Next', // Next directionNav text
+				randomStart: false, // Start on a random slide
+				beforeChange: function(){}, // Triggers before a slide transition
+				afterChange: function(){}, // Triggers after a slide transition
+				slideshowEnd: function(){}, // Triggers after all slides have been shown
+				lastSlide: function(){}, // Triggers when last slide is shown
+				afterLoad: function(){} // Triggers when slider has loaded
+			} );
+		// Sub Category
+			$( '.jb-category-name:contains("/")' ).each( function() {
+				$( this ).text( $( this ).text().replace( '/', ' / ' ) );
+			} );
+		// Responsive Image
+			$( '.jb-article p:has(span.imageblock)' ).wrap( '<div class="jb-image-p-wrap"></div>' );
+			$( '.jb-article table:has(span.imageblock)' ).each( function() {
+				if ( $( 'td', this ).length == 2 ) {
+					$( this ).addClass( 'jb-image-table jb-image-table-2' ).wrap( '<div class="jb-image-table-wrap"></div>' );
+				}
+				if ( $( 'td', this ).length == 3 ) {
+					$( this ).addClass( 'jb-image-table jb-image-table-3' ).wrap( '<div class="jb-image-table-wrap"></div>' );
+				}
+			} );
+		// Responsive YouTube Auto
+			
+				$( '.jb-article iframe[src^="https://www.youtube.com/"]' ).wrap( '<div class="jb-youtube-16x9"></div>' );
+				$( '.jb-article .jb-youtube-16x9:has( .jb-youtube-16x9 )' ).css( 'padding-bottom', '0px' );
+			
+		// Responsive Table
+			
+				$( '.jb-article table' ).wrap( '<div class="jb-responsive-table"></div>' );
+			
+		// Pagination
+			$( '.jb-pagination span[class="selected"]' ).parent( 'a' ).parent( 'li' ).addClass( 'jb-active' );
+		// Recent Posts
+			$( '.jb-cell-module-recent-posts .jb-module-list-table-cell-1' ).not( ':has( img )' ).append( '<img src="https://tistory1.daumcdn.net/tistory/2826541/skin/images/jb-blank-150x150.png" alt="jb-blank">' );
+			$( 'span.jb-recent-posts-reply-count > span' ).not( ':empty' ).each( function() {
+				$( this ).text( $( this ).text().replace( '(', '' ).replace( ')', '' ) ).prepend( '<i class="xi-message-o"></i>' );
+			} );
+		// Calendar
+			$( '.jb-module-content-calendar table td' ).has( 'a' ).addClass( 'jb-day-has-post' );
+		// AdSense - Content Middle
+			
+			
+				$( '.jb-adsense-cm' ).each( function() {
+					$( this ).text( '' );
+				} );
+			
+		// TOC
+			$( '#jb-toc' ).toc( {
+				content: ".jb-article",
+				headings: "h1,h2,h3"
+			} );
+			$( '#jb-toc a' ).smoothScroll( {
+				offset: -15
+			} );
+		// Category - Fold
+			$( '.jb-module-content-category-fold ul.category_list > li:has(ul) > a' ).addClass( 'jb-category-has-sub' ).removeAttr( 'href' );
+			$( 'a.jb-category-has-sub' ).click( function() {
+				$( this ).siblings().slideToggle();
+			} );
+		// Top Button
+			$( window ).scroll( function() {
+				if ( $( this ).scrollTop() > 200 ) {
+					$( '.jb-top' ).fadeIn();
+				} else {
+					$( '.jb-top' ).fadeOut();
+				}
+			} );
+			$( '.jb-top' ).click( function() { $( 'html, body' ).animate( { scrollTop : 0 }, 600 ); return false; } );
+		// Remove URL Category
+			
+        $( '.jb-index-title a' ).each( function() {
+          this.href = this.href.replace( /\?category=([0-9]+)/ig, '' );
+        } )
+				$( '.jb-index-summary a' ).each( function() {
+          this.href = this.href.replace( /\?category=([0-9]+)/ig, '' );
+        } )
+				$( '.jb-related .jb-index-related-title a' ).each( function() {
+          this.href = this.href.replace( /\?category=([0-9]+)/ig, '' );
+        } )
+				$( '.another_category a' ).each( function() {
+          this.href = this.href.replace( /\?category=([0-9]+)/ig, '' );
+        } )
+				$( '.jb-index-table-cell-thumbnail a' ).each( function() {
+          this.href = this.href.replace( /\?category=([0-9]+)/ig, '' );
+        } )
+				$( '.jb-index-related-table-cell-thumbnail a' ).each( function() {
+          this.href = this.href.replace( /\?category=([0-9]+)/ig, '' );
+        } )
+			
+		// Show
+			$( '.jb-background' ).css( { visibility: 'visible' } );
+	} );
+</script>
+
+	
+	<script>
+	    lightbox.option({
+			"fadeDuration": 200,
+		    "resizeDuration": 200,
+		    "wrapAround": false,
+			"albumLabel": "%1 / %2",
+			"fitImagesInViewport":true ,
+			"stopEvent": false
+	    })
+	</script>            <script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/tiara.min.js.download"></script>
+            <script type="text/javascript">window.tiara = {"svcDomain":"user.tistory.com","section":"\uae00\ubdf0","trackPage":"\uae00\ubdf0_\ubcf4\uae30","page":"\uae00\ubdf0","key":"2826541-504","customProps":{"userId":"4930714","blogId":"2826541","role":"user","filterTarget":false,"trackPage":"\uae00\ubdf0_\ubcf4\uae30","entryId":"504"},"entry":{"entryId":"504","categoryName":"Linux","categoryId":"760718","author":"3710865","authorId":"3710865","image":"3710865","plink":"\/504","tags":["\ub9ac\ub205\uc2a4","\ub9ac\ub205\uc2a4\uba85\ub839\uc5b4\ubaa8\uc74c","\uba85\ub839\uc5b4","\ud130\ubbf8\ub110"],"key":"2826541-504"},"sentryDsn":"https:\/\/a53520229cd744e798d42900d76b0e2a@aem-collector.daumkakao.io\/713","kakaoAppKey":"b8aef3eeb03fa312b81795386484f051","appUserId":"1758882748"};</script>
+            <script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/tiara.min.js(1).download" defer=""></script>
+                        <script type="text/javascript">
+                window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: 'tistory'}];
+            </script>
+            <script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/roosevelt_dk_bt.js.download" async=""></script><script type="text/javascript">if(window.console!=undefined){setTimeout(console.log.bind(console,"%cTISTORY","font:8em Arial;color:#EC6521;font-weight:bold"),0);setTimeout(console.log.bind(console,"%c  나를 표현하는 블로그","font:2em sans-serif;color:#333;"),0);}</script><iframe style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/api.html" id="editEntry"></iframe>            <div class="#menubar menu_toolbar ">
+                                            <h2 class="screen_out">티스토리툴바</h2>
+                                            <div class="btn_tool">
+                    <button class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="2826541" data-url="https://coding-factory.tistory.com" data-device="web_pc">
+                        <strong class="txt_tool_id">코딩팩토리</strong>
+                        <em class="txt_state">구독하기</em>
+                        <span class="img_common_tistory ico_check_type1"></span>
+                    </button>
+                </div>
+                                       </div>
+                                       <div class="#menubar menu_toolbar "></div>
+                                       <script type="text/javascript" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/menubar.min.js.download"></script>        <div class="layer_tooltip">
+            <div class="inner_layer_tooltip">
+                <p class="desc_g"></p>
+            </div>
+        </div>
+        <div id="tistoryEtcLayer" class="layer_post" style="display: none;"></div><div id="tistorySnsLayer" class="layer_post" style="display: none;"><div class="bundle_post"><a href="https://coding-factory.tistory.com/504#none" class="btn_mark" data-service="facebook"><span class="ico_sns ico_fb"></span>페이스북으로 공유</a><a href="https://coding-factory.tistory.com/504#none" class="btn_mark" data-service="kakaotalk"><span class="ico_sns ico_kt"></span>카카오톡으로 공유</a><a href="https://coding-factory.tistory.com/504#none" class="btn_mark" data-service="kakaostory"><span class="ico_sns ico_ks"></span>카카오스토리로 공유</a><a href="https://coding-factory.tistory.com/504#none" class="btn_mark" data-service="twitter"><span class="ico_sns ico_tw"></span>트위터로 공유</a><a href="https://coding-factory.tistory.com/504#none" class="btn_mark" data-service="url"><span class="ico_sns ico_url"></span>URL 복사</a><span class="ico_postbtn ico_arrbt"></span></div></div>
+
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://coding-factory.tistory.com/504"></a><a class="lb-next" href="https://coding-factory.tistory.com/504"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_0_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_0_anchor" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/ads(4).html" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="displayed" style="display: block; width: 1036px !important; height: 129px !important; bottom: 0px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-ad-status="filled" data-anchor-shown="true"><ins class="ee" style="inset: auto !important; clear: none !important; display: block !important; float: none !important; height: 5px !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: relative !important; vertical-align: baseline !important; visibility: visible !important; width: auto !important; z-index: 1 !important; background-color: rgb(250, 250, 250) !important; box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 5px -1px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px !important;"><span style="display: block !important; width: 80px !important; height: 45px !important; bottom: 0px !important; left: 0% !important; pointer-events: none !important;"><svg style="margin: 0px !important; position: absolute !important; bottom: 0px !important; left: 0% !important; display: block !important; width: 80px !important; height: 30px !important; transform: none !important; pointer-events: initial !important;"><defs><filter id="dropShadowTop" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><fecomponenttransfer in="SourceAlpha" result="TransferredAlpha"><fefuncr type="discrete" tableValues="0.5"></fefuncr><fefuncg type="discrete" tableValues="0.5"></fefuncg><fefuncb type="discrete" tableValues="0.5"></fefuncb></fecomponenttransfer><fegaussianblur in="TransferredAlpha" stdDeviation="2"></fegaussianblur><feoffset dx="0" dy="0" result="offsetblur"></feoffset><femerge><femergenode></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs><path d="M0,26 L0,6 A6,6 0 0,1 6,1 L50,1 A6,6 0 0,1 56,6 L56,20 A6,6 0 0,0 62,26 Z" stroke="#FAFAFA" stroke-width="1" fill="#FAFAFA" style="filter: url(&quot;#dropShadowTop&quot;);"></path><rect x="0" y="25" width="80" height="5" style="fill: rgb(250, 250, 250);"></rect><g class="down" stroke="#616161" stroke-width="2px" stroke-linecap="square"><line x1="22" y1="12" x2="28" y2="18"></line><line x1="28" y1="18" x2="34" y2="12"></line></g></svg></span></ins><ins id="aswift_7_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-table !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><ins id="aswift_7_anchor" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_7" name="aswift_7" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/zrt_lookup.html" data-google-container-id="a!8" data-google-query-id="CJyv26eN6_UCFQThvAody50CYA" data-load-complete="true" style="display: block; margin: 0px auto;"></iframe></ins></ins></ins><iframe src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/zrt_lookup(1).html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-ad-status="filled"><ins id="aswift_6_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-table !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><ins id="aswift_6_anchor" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_6" name="aswift_6" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="./[Linux] 리눅스 터미널 명령어 모음 총정리_files/zrt_lookup(2).html" data-google-container-id="a!7" data-google-query-id="CJuv26eN6_UCFQThvAody50CYA" data-load-complete="true" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;"></iframe></ins></ins></ins></html>
