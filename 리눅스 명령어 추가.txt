@@ -1,0 +1,18 @@
+rm -r 폴더 강제 삭제
+useradd 유저 추가
+usermod 권한부여
+userdel 유저 삭제 // 옵션 -r  홈디렉토리도 같이 삭제
+
+sudo passwd 유저이름 // 비밀번호 초기화
+
+grep /bin/bash /etc/passwd // 유저 목록
+
+
+
+
+kjh12:x:1009:1009::/home/kjh12:/bin/sh
+
+sudo su << 루트 계정 전환
+바꾸고
+mkhomedir_helper 유저이름
+

@@ -1,0 +1,9 @@
+conda activate  // 콘다 활성화
+conda deactivate // 콘다 비활성화
+conda create -n 이름 python=버전 // 콘다 깡통 만들기
+conda info --envs // 콘다 환경 리스트
+conda activate 환경이름 // 콘다 환경 활성화
+
+
+conda export 환경이름 // 환경 activate 하고 해야함
+conda env create -f "파일명" // yaml 파일

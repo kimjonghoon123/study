@@ -1,0 +1,16 @@
+docker run -it -d --name my-server images
+
+docker commit CONTAINER IMAGE_NAME
+
+docker exec -it test bash
+
+
+
+도커 내부 통신 host.docker.internal:port >> localhost:port
+
+
+docker cp 로컬파일경로 이미지이름:컨테이너경로
+
+docker ps
+
+docker images
