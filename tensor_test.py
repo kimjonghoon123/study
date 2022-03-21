@@ -1,17 +1,30 @@
 import tensorflow as tf
-(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
-x_train, x_test = x_train / 255.0, x_test / 255.0
 
-model = tf.keras.models.Sequential([
-    tf.keras.layers.Flatten(input_shape=(28, 28)),
-    tf.keras.layers.Dense(128, activation='relu'),
-    tf.keras.layers.Dropout(0.2),
-    tf.keras.layers.Dense(10, activation='softmax')
-])
+tf.debugging.set_log_device_placement(True)
 
-model.compile(optimizer='adam',
-              loss='sparse_categorical_crossentropy',
-              metrics=['accuracy'])
+# 텐서 생성
+a = tf.constant([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
+b = tf.constant([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
+c = tf.matmul(a, b)
+
+print(c)
+
+tf.debugging.set_log_device_placement(True)
+
+# 텐서를 CPU에 할당
+with tf.device('/GPU:0'):
+  a = tf.constant([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
+  b = tf.constant([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
+
+c = tf.matmul(a, b)
+print(c)
 
 
-model.fit(x_train, y_train, epochs=5)
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+  # 텐서플로가 첫 번째 GPU만 사용하도록 제한
+  try:
+    tf.config.experimental.set_visible_devices(gpus[0], 'GPU')
+  except RuntimeError as e:
+    # 프로그램 시작시에 접근 가능한 장치가 설정되어야만 합니다
+    print(e)
