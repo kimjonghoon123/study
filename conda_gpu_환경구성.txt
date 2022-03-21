@@ -1,0 +1,10 @@
+nvidia들어가서 설치
+
+cuda toolkit == 11.1.0
+cudnn == 8.1.1   
+----------------------
+
+anaconda
+python==3.6.8
+pip install tensorflow-gpu
+
